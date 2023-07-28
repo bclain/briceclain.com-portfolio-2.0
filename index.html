@@ -2,14 +2,6 @@
 <html lang="fr">
 <head>
     <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-8HSXP45WGL"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-
-      gtag('config', 'G-8HSXP45WGL');
-    </script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale = 1, maximum-scale=3.0, minimum-scale=1">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -620,58 +612,6 @@
       $(".contact_back").removeClass("cbactive");
       $(".contact").removeClass("cactive");
     });
-    
-
-    // Formulaire 
-
-
-    function courchange(){
-      if( document.querySelector('[name="email"]').value.length===0){
-      $(".c1").removeClass("tactive")
-      }
-      else{
-        $(".c1").addClass("tactive")
-      }
-    }
-
-    function nomchange(){
-      if( document.querySelector('[name="name"]').value.length===0){
-      $(".c2").removeClass("tactive")
-      }
-      else{
-        $(".c2").addClass("tactive")
-      }
-    }
-
-    function projetchange(){
-      if( document.querySelector('[name="message"]').value.length===0){
-      $(".c3").removeClass("tactive")
-      }
-      else{
-        $(".c3").addClass("tactive")
-      }
-    }
-
-    document.querySelector('button').addEventListener('click', (e)=>{
-      e.preventDefault();
-      const contactForm = document.querySelector('#form');
-      const email = document.querySelector('[name="email"]');
-      const nom = document.querySelector('[name="name"]');
-      const message = document.querySelector('[name="message"]');
-      // validation before sending the data
-      if(nom.value.length===0 ||email.value.length===0 || message.value.length===0){
-        $("#err").html(" Veillez remplir tous les champs !")
-        ;}
-      else if(!email.value.match(/^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/)){
-        $("#err").html(" Veillez rentrer une adresse email valide...");
-      }
-      else{
-        let data = new FormData(contactForm);  
-        fetch("https://formbold.com/s/oPxbo", { method: "POST", body: data });
-        $("#succ").html(" Message envoyé avec succés !")
-        contactForm.reset()
-      }
-    })
 
     // Bar de scroll top
     window.onscroll = function() {myFunction()};
