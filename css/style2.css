@@ -11,10 +11,7 @@ html {
 
 .en{
   display: none!important;
-}
-
-
-
+} 
 
 /*body */
 body{
@@ -27,8 +24,8 @@ body{
   }
 
   :root {
-    --lien: #FF2E00;
-    --primary: #FF5C00;
+    --lien: #0000ff;
+    --primary: #0d00ff;
     --white: #ffffff;
     --grey: #c3c3c3;
     --content: calc((100vw/12)*9.5);
@@ -775,7 +772,7 @@ width: 20px;
     background-color: var(--lien);
     height: 4vh;
     padding: 0% 0.5vh 1vh 0.5vh;
-    border-radius: 50px;
+    border-radius: 15px;
     margin-left: 20px;
     aspect-ratio: 1.1;
     transition: 200ms ease-in-out;
@@ -1112,7 +1109,7 @@ margin-right:var(--small);
 .message h3{
   padding: 15px 40px;
   margin: 2vh;
-  border-radius: 50px;
+  border-radius: 15px;
   line-height: 200%;
   background-color: #f0f0f0;;
 }
@@ -1169,7 +1166,7 @@ margin-right:var(--small);
   background-color: var(--lien);
   height: 4vh;
   padding: 0% 0.5vh 1vh 0.5vh;
-  border-radius: 50px;
+  border-radius: 15px;
   aspect-ratio: 1.1;
   transition: 200ms ease-in-out;
 }
