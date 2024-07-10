@@ -1,660 +1,797 @@
 <!DOCTYPE html>
 <html lang="fr">
-<head>
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-8HSXP45WGL"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
 
-      gtag('config', 'G-8HSXP45WGL');
-    </script>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale = 1, maximum-scale=3.0, minimum-scale=1">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <meta property="og:url" content=" https://briceclain.com/ ">
-    <meta property="og:image" content=" https://briceclain.com/img/profil1.png ">
-    <meta property="og:description" content="Salut, moi c'est Brice! Je design et développe des sites web. Je design aussi votre image de marque, logo... ">
-    <meta property="og:title" content=" Brice Clain, designer graphique et developpeur web. ">
-    <meta name="keywords" content="tél 819, propulsion pme, stratège web, média webdesign, siteweb ca, production vidéo, aujourd hui, médias sociaux, génération web, imprimerie trois, web impression, asp net, trois rivieres, rocky giroux, stylla web, syn média, david magny, commerce électronique, nouveau site, média fou, web pour inspecteur, trois rivières yannick, armoires de cuisine, festivoix de trois, réseau agences intégrées, agences intégrées 360, tourisme trois rivières, diocèse de trois, 2018 par pagup, pagup agence seo, trois rivière ottawa, conception plan évacuation, plan évacuation trois, évacuation trois rivières, qualifiées vous contacteront, madison solutions web, université du québec, formulaire et agences, agences web qualifiées, hétu solutions évolutives, idée création web, salamandre conception infographique, créations web trois, petites et moyennes, basée trois rivières, clés en main, refonte de site, offrant des services, conception, création, internet, québec, mauricie, marketing, services, commerce, référencement, entreprises, pme, spécialisée, concepteur, numérique, montréal, sherbrooke, service, hébergement, gestion, située, offre, studio, réseau, communication, affaires, wordpress, ville, équipe, local, prix, rue, imprimerie, stratégie, siteexact, offrir, publicité, recherche, petites, boutique, entreprise, vidéo, collège, laflèche, consultant, victoriaville, plan, stratégies, officiel, université, rocky, giroux, experts, facebook    ">
-    <title>Brice, Développeur web et designer ux/ui</title>
-    <link rel="icon" type="image/png" href="icon.png"/>
-    <link rel="stylesheet" href="css/style2.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.2/gsap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.2/ScrollTrigger.min.js"></script> 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.2/Draggable.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.2/ScrollToPlugin.min.js"></script>
+<head>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-8HSXP45WGL"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'G-8HSXP45WGL');
+  </script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale = 1, maximum-scale=3.0, minimum-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta property="og:url" content=" https://briceclain.com/ ">
+  <meta property="og:image" content=" https://briceclain.com/img/profil1.png ">
+  <meta property="og:description"
+    content="Salut, moi c'est Brice! Je design et développe des sites web. Je design aussi votre image de marque, logo... ">
+  <meta property="og:title" content=" Brice Clain, designer graphique et developpeur web. ">
+  <meta name="keywords"
+    content="tél 819, propulsion pme, stratège web, média webdesign, siteweb ca, production vidéo, aujourd hui, médias sociaux, génération web, imprimerie trois, web impression, asp net, trois rivieres, rocky giroux, stylla web, syn média, david magny, commerce électronique, nouveau site, média fou, web pour inspecteur, trois rivières yannick, armoires de cuisine, festivoix de trois, réseau agences intégrées, agences intégrées 360, tourisme trois rivières, diocèse de trois, 2018 par pagup, pagup agence seo, trois rivière ottawa, conception plan évacuation, plan évacuation trois, évacuation trois rivières, qualifiées vous contacteront, madison solutions web, université du québec, formulaire et agences, agences web qualifiées, hétu solutions évolutives, idée création web, salamandre conception infographique, créations web trois, petites et moyennes, basée trois rivières, clés en main, refonte de site, offrant des services, conception, création, internet, québec, mauricie, marketing, services, commerce, référencement, entreprises, pme, spécialisée, concepteur, numérique, montréal, sherbrooke, service, hébergement, gestion, située, offre, studio, réseau, communication, affaires, wordpress, ville, équipe, local, prix, rue, imprimerie, stratégie, siteexact, offrir, publicité, recherche, petites, boutique, entreprise, vidéo, collège, laflèche, consultant, victoriaville, plan, stratégies, officiel, université, rocky, giroux, experts, facebook    ">
+  <title>Brice, Développeur web et designer ux/ui</title>
+  <link rel="icon" type="image/png" href="icon.png" />
+  <link rel="stylesheet" href="css/style2.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.2/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.2/ScrollTrigger.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.2/Draggable.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.2/ScrollToPlugin.min.js"></script>
 </head>
+
 <body class="my-scrollbar">
-  
+
 
   <div class="contact_back">
   </div>
-    <div class="contact">
-      <div class="retour"> 
-        <img src="img/back.svg" alt="retour">
-        <p>Retour</p>
-      </div>
-
-              
-      <div class="num">
-        <h2>Contacts</h2>
-        <a href="mailto: contact@briceclain.com"><h3>contact@briceclain.com </h3></a>
-        <a href="tel: 001-819-608-8335"> <h3>(+1) 819 609 8335</h3></a>
-      </div>
-
-      <form id="form" >
-
-  
-        <p class="cour c1">Votre courriel</p>
-        <div class="input_group">
-          <input oninput="courchange()"  type="email" name="email" placeholder="Votre courriel" required>
-        </div>
-        <p class="cour c2">Votre nom complet</p>
-        <div class="input_group">
-          <input oninput="nomchange()"  type="name" name="name" placeholder="Votre nom complet" required>
-        </div>
-        <p class="cour c3">Votre projet</p>
-        <div class="input_group">
-          <textarea oninput="projetchange()"  name="message"  placeholder="Comment je peux vous aider ?" required></textarea>
-        </div>
-        <p id="err"></p>
-        <p id="succ"></p>
-        <div class="input_group">
-          <button type="submit">Envoyer</button>
-        </div>
-      </form>
-
-      <div class="reseaux">
-        <a class="rleft" href="https://www.instagram.com/brice.web/" target="_blank"><img src="img/reseaux/in.svg" alt="instagram"></a>
-        <a  href="https://www.linkedin.com/in/brice-clain-853852189/" target="_blank"><img src="img/reseaux/ln.svg" alt="linkedin"></a>
-        <a class="rleft" href="https://www.tiktok.com/@brice.web" target="_blank"><img src="img/reseaux/tt.svg" alt="tiktok"></a>
-        <a href="https://www.behance.net/briceclain" target="_blank"><img src="img/reseaux/yt.svg" alt="youtube"></a>
-       </div>
+  <div class="contact">
+    <div class="retour">
+      <img src="img/back.svg" alt="retour">
+      <p>Retour</p>
     </div>
-  
-          
-    
-      <a  id="boutontr">
-        
-          <h4>Travailler <br> avec moi</h4>
-          <div class="ar"><img src="img/aright.svg" alt="travailler avec moi"></div>
-          
+
+
+    <div class="num">
+      <h2>Contacts</h2>
+      <a href="mailto: contact@briceclain.com">
+        <h3>contact@briceclain.com </h3>
+      </a>
+      <a href="tel: 001-819-608-8335">
+        <h3>(+1) 819 609 8335</h3>
+      </a>
+    </div>
+
+    <form id="form">
+
+
+      <p class="cour c1">Votre courriel</p>
+      <div class="input_group">
+        <input oninput="courchange()" type="email" name="email" placeholder="Votre courriel" required>
+      </div>
+      <p class="cour c2">Votre nom complet</p>
+      <div class="input_group">
+        <input oninput="nomchange()" type="name" name="name" placeholder="Votre nom complet" required>
+      </div>
+      <p class="cour c3">Votre projet</p>
+      <div class="input_group">
+        <textarea oninput="projetchange()" name="message" placeholder="Comment je peux vous aider ?"
+          required></textarea>
+      </div>
+      <p id="err"></p>
+      <p id="succ"></p>
+      <div class="input_group">
+        <button type="submit">Envoyer</button>
+      </div>
+    </form>
+
+    <div class="reseaux">
+      <a class="rleft" href="https://www.instagram.com/brice.web/" target="_blank"><img src="img/reseaux/in.svg"
+          alt="instagram"></a>
+      <a href="https://www.linkedin.com/in/brice-clain-853852189/" target="_blank"><img src="img/reseaux/ln.svg"
+          alt="linkedin"></a>
+      <a class="rleft" href="https://www.tiktok.com/@brice.web" target="_blank"><img src="img/reseaux/tt.svg"
+          alt="tiktok"></a>
+      <a href="https://www.behance.net/briceclain" target="_blank"><img src="img/reseaux/yt.svg" alt="youtube"></a>
+    </div>
+  </div>
+
+
+
+  <a id="boutontr">
+
+    <h4>Travailler <br> avec moi</h4>
+    <div class="ar"><img src="img/aright.svg" alt="travailler avec moi"></div>
+
+  </a>
+
+
+
+  <div class="loading">
+    <div class="top">
+    </div>
+    <div class="hide">
+    </div>
+    <div class="lback chargement">
+    </div>
+  </div>
+
+  <div class="menu">
+
+    <img id="imgprofil" src="img/profile.png" alt="Logo Brice Clain">
+
+    <div class="men">
+
+      <a onclick="acc()" class="ac item select">
+        <img src="img/acc.svg" alt="home">
+        <h5>Accueil</h5>
+      </a>
+
+      <a onclick="rea()" class="rea item">
+        <img src="img/rea.svg" alt="realisations">
+        <h5>Réalisations</h5>
+      </a>
+
+      <a onclick="qu()" class="qu item">
+        <img src="img/bio.svg" alt="biographie">
+        <h5>Qui suis-je ?</h5>
+      </a>
+
+      <a href="en/" class="ang">
+        <h4>en</h4>
       </a>
 
 
-     
-    <div class="loading">
-      <div class="top">
-      </div>
-      <div class="hide">
-      </div>
-      <div class="lback chargement">
-      </div>
-    </div>
 
-    <div class="menu">
-
-      <img id="imgprofil" src="img/profile.png" alt="Logo Brice Clain">
-
-      <div class="men">
-
-        <a onclick="acc()" class="ac item select">
-          <img src="img/acc.svg" alt="home">
-          <h5>Accueil</h5>
-        </a>
-
-        <a onclick="rea()" class="rea item">
-          <img src="img/rea.svg" alt="realisations">
-          <h5>Réalisations</h5>
-        </a>
-
-        <a onclick="qu()" class="qu item">
-          <img src="img/bio.svg" alt="biographie">
-          <h5>Qui suis-je ?</h5>
-        </a>
-
-        <a href="en/" class="ang">
-          <h4>EN</h4>
-        </a>
-
-        <img class="drag" src="img/drag.svg" alt="drag">
-
-      </div>
-
-       <div class="reseaux">
-        <a class="rleft" href="https://www.instagram.com/brice.web/" target="_blank"><img src="img/reseaux/in.svg" alt="instagram"></a>
-        <a  href="https://www.linkedin.com/in/brice-clain-853852189/" target="_blank"><img src="img/reseaux/ln.svg" alt="linkedin"></a>
-        <a class="rleft" href="https://www.tiktok.com/@brice.web" target="_blank"> <img src="img/reseaux/tt.svg" alt="tiktok"></a>
-        <a href="https://www.behance.net/briceclain" target="_blank"><img src="img/reseaux/yt.svg" alt="youtube"></a>
-       </div>
+      <img class="drag" src="img/drag.svg" alt="drag">
 
     </div>
 
-    <div class="content">
-      <div class="progress-container">
-        <div class="progress-bar" id="myBar"></div>
-      </div> 
-      <section class="sec1" id="#sec1">
-        <div class="back">
-        </div>
-          <img class=" it item1 purple" src="img/tech/item1.svg" alt="Figma">
-          <img class=" it item2" src="img/tech/item2.svg" alt="Adobe xd">
-          <img class=" it item3" src="img/tech/item3.svg" alt="">
-          <img class=" it item4" src="img/tech/item4.svg" alt="">
-          <img class=" it item5" src="img/tech/item5.svg" alt="">
-          <img class=" it item6" src="img/tech/item6.svg" alt="">
-          <img class=" it item7" src="img/tech/item7.svg" alt="">
-          <img class=" it item8" src="img/tech/item8.svg" alt="">
-    
+    <div class="reseaux">
+      <a class="rleft" href="https://www.instagram.com/brice.web/" target="_blank"><img src="img/reseaux/in.svg"
+          alt="instagram"></a>
+      <a href="https://www.linkedin.com/in/brice-clain-853852189/" target="_blank"><img src="img/reseaux/ln.svg"
+          alt="linkedin"></a>
+      <a class="rleft" href="https://www.tiktok.com/@brice.web" target="_blank"> <img src="img/reseaux/tt.svg"
+          alt="tiktok"></a>
+      <a href="https://www.behance.net/briceclain" target="_blank"><img src="img/reseaux/yt.svg" alt="youtube"></a>
+    </div>
 
-          <img id="imgprofil" src="img/profil1.png" alt="">
+  </div>
 
-        <div class="s1">
-          <div class="orange"></div>
-          <div class="texts1 anim-typewriter">
-            <div class="line line1">
-              <p>01 </p>
-              <div class= "textcontain">
-                <h2>  Salut, moi c'est <span>Brice</span>  ! </h2>
-                <div class="hide"></div>
-              </div>
-            </div>
-            <div class="line line2">
-              <p>02</p>
-              <div class= "textcontain">
-                <h2> Je <span>design</span> <img src="img/design.svg" alt="design"> et <span>développe </span> <img src="img/laptop.svg" alt="laptop">   </h2>
-                <div class="hide"></div>
-              </div>
-            </div>
-            <div class="line line3">
-                <p>03</p>
-                <div class= "textcontain">
-                  <h2> des <span>sites web </span> . </h2>
-                  <div class="hide"></div>
-                </div>
-            </div>
-          </div>
-          <h4>Je design aussi votre image de marque, logo...</h4>
-        </div>
-
-        
-
-        <a class="btnsec1" onclick="scrollacc()">
-          <p>En savoir plus</p>
-          <img src="img/ardown.svg" alt="">
-        </a>
-
-      </section>
+  <div class="content">
+    <div class="progress-container ">
+      <div class="progress-bar fade2 " id="myBar"></div>
+    </div>
+    <section class="sec1" id="#sec1">
+      <div class="back">
+        <div class="backbottom"> <span></span></div>
+      </div>
+      <img class=" it item1 purple" src="img/tech/item1.svg" alt="Figma">
+      <img class=" it item2" src="img/tech/item2.svg" alt="Adobe xd">
+      <img class=" it item3" src="img/tech/item3.svg" alt="">
+      <img class=" it item4" src="img/tech/item4.svg" alt="">
+      <img class=" it item5" src="img/tech/item5.svg" alt="">
+      <img class=" it item6" src="img/tech/item6.svg" alt="">
+      <img class=" it item7" src="img/tech/item7.svg" alt="">
+      <img class=" it item8" src="img/tech/item8.svg" alt="">
 
 
-      <div class="title">
+      <img id="imgprofil" src="img/profil1.png" alt="">
+
+      <div class="s1">
         <div class="orange"></div>
-        <div class="texttitle anim-typewriter">
+        <div class="texts1 anim-typewriter">
           <div class="line line1">
             <p>01 </p>
-            <div class= "textcontain">
-              <h5>  D'abord il nous faut une</h5>
+            <div class="textcontain">
+              <h2> Salut, moi c'est <span>Brice</span> ! </h2>
               <div class="hide"></div>
             </div>
           </div>
           <div class="line line2">
             <p>02</p>
-            <div class= "textcontain">
-              <h5>  <span>idée</span> ... </h5>
+            <div class="textcontain">
+              <h2> Je <span>design</span> <img src="img/design.svg" alt="design"> et <span>développe </span> <img
+                  src="img/laptop.svg" alt="laptop"> </h2>
               <div class="hide"></div>
             </div>
           </div>
-
           <div class="line line3">
-            <p>03 </p>
-            <div class= "textcontain">
-              <h5>  Ensuite une analyse et une </h5>
+            <p>03</p>
+            <div class="textcontain">
+              <h2> des <span>sites web </span> . </h2>
               <div class="hide"></div>
             </div>
           </div>
-          <div class="line line4">
-            <p>04</p>
-            <div class= "textcontain">
-              <h5>  <span>direction </span> ... </h5>
-              <div class="hide"></div>
-            </div>
-          </div>
-          <div class="line line5">
-            <p>05 </p>
-            <div class= "textcontain">
-              <h5> La créativité prend place </h5>
-              <div class="hide"></div>
-            </div>
-          </div>
-          <div class="line line6">
-            <p>06</p>
-            <div class= "textcontain">
-              <h5> pour le  <span>design</span>.</h5>
-              <div class="hide"></div>
-            </div>
-          </div>
-          <div class="line line7">
-            <p>07 </p>
-            <div class= "textcontain">
-              <h5> Pour finir, je <span>code</span> et </h5>
-              <div class="hide"></div>
-            </div>
-          </div>
-          <div class="line line8">
-            <p>08</p>
-            <div class= "textcontain">
-              <h5> je <span>publie</span> votre <span>site web </span> ! </h5>
-              <div class="hide"></div>
-            </div>
-          </div>
-          <div class="line line9">
-            <p>09</p>
-            <div class= "textcontain">
-              <h5> Vous vous demandez sûrement </h5>
-              <div class="hide"></div>
-            </div>
-          </div>
-          <div class="line line10">
-            <p>10</p>
-            <div class= "textcontain">
-              <h5>  ...</h5>
-              <div class="hide"></div>
-            </div>
-          </div>
-
         </div>
+        <h4>Je design aussi votre image de marque, logo...</h4>
       </div>
-      
-
-      <section class="sec2" id="sec2">
-
-        <div class="message">
-          <div class="period m1">
-            <img src="img/LogoPeriod.png" alt="miniature period">
-            <h3>J’ai besoin d’un <span>site web</span>  pour ma <span>compagnie</span>, PERIOD. <br> On se specialise dans la mise en marché de produits d'hygiène féminine <br> écoresponsable et non genré.
-            </h3>
-          </div>
-          <div class="moi m2">
-            <h3>D’accord, super !                
-              <br> Je m'occupe de tout, d'abord le <span>design</span>  que je vous partage.  Une fois validé,  <br> je <span>développe</span>  votre  <span>site web</span>, avant de le mettre en ligne ! 
-            </h3>
-            <img src="img/profile.png" alt="">
-          </div>
-          <div class="period m3">
-            <img src="img/LogoPeriod.png" alt="">
-            <h3> Parfait, on commence quand :) ?
-            </h3>
-          </div>
-        </div>
-        <div class="button">
-          <a class="btnsec2" onclick="scrollacc2()">
-            <p>Maintenant !</p>
-            <img src="img/ardown.svg" alt="">
-          </a>
-        </div>
 
 
-      </section>
 
-      <section class="sec3" id="sec3">
-        <div class="zone2" id="zone2">
-          <div class="ens">
-            <div class="anal yo">
-              <h3> <img src="img/idea.svg" alt=""> Analyse du marché</h3>
-              <p>Les concurrents visent un public ciblé essentiellement genre féminin. De plus leur design est pour la plupart très générique / concret: peu d’illustrations, plutôt “froid”, surtout lorsque l’écologie est mise en avant.</p>        
-            </div>
-    
-            <div class="difi yo">
-              <h3> <img src="img/pb.svg" alt=""> Problématique</h3>
-              <p>Le public cible est large. Il faut donc parler à tous les genres, mais ne pas perdre le public définit comme “féminin”.</p>
-            </div>
-          </div>
-        </div>
+      <a class="btnsec1" onclick="scrollacc()">
+        <p>En savoir plus</p>
+        <img src="img/ardown.svg" alt="">
+      </a>
 
-        <div class="zone3" id="zone3" >
-          <div class="solu" id="solu">
-            <h3>Solution</h3>
-          </div>
-        </div>
-      </section>
-      
-      
-      <section class="sec4" id="sec4">
-        <div class="design">
-              <img  class="pe" id="pe1" src="img/period-min.png" alt="">
-              <img class="mac" src="img/mac-min.png" alt="">
-        </div>
-        <div class="arg"> 
-          <div class="arg1" style="z-index: 10;">
-            <img src="img/focus.svg" alt="">
-            <h5>  Mettre en avant le produit</h5>
-            <p>Mettre  en avant son utilité permet de s'adresser à une clientèle neutre.</p>
-          </div>
-  
-          <div class="arg1" >
-            <img src="img/star.svg" alt="">
-            <h5>  Page légère et chaleureuse</h5>
-            <p> Grâce aux couleurs, aux bordures et aux illustrations. </p>
-          </div>
-        </div>
-
-
-        
-          <div class="mobile">
-            <img class="pem" id="pe2" src="img/periodmobile.png" alt="">
-            <img class="iphone" src="img/iphone.png" alt="">
-        </div>
-      </section>
-
-
-      <section class="sec4mobile" id="sec4">
- 
-        <div class="arg"> 
-          <div class="arg1" style="z-index: 10;">
-            <img src="img/focus.svg" alt="">
-            <h4>  Mettre en avant le produit</h4>
-            <p>Mettre  en avant son utilité permet de s'adresser à une clienèle neutre.</p>
-          </div>
-          <div class="arg1" >
-            <img src="img/star.svg" alt="">
-            <h4>  Page légère et chaleureuse</h4>
-            <p> Grâce aux couleurs, aux bordures et aux illustrations. </p>
-          </div>
-        </div>
-
-        <div class="design">
-              <img  class="pe" id="pe2" src="img/period-min.png" alt="">
-              <img class="mac" src="img/mac2.png" alt="">
-        </div>
-
-  
-
-
-        
-          <div class="mobile">
-            <img class="pem" src="img/periodmobile.png" alt="">
-            <img class="iphone" src="img/iphone.png" alt="">
-        </div>
-      </section>
-
-
-      <section class="faq">
-        <div class="faq1 faq2">
-          <div class="left">
-            <img src="img/devis.svg" alt="">
-            <h4> Combien <br> ça coute ?</h4>
-          </div>
-          <div class="hr"></div>
-          <p>Parlez-moi de votre projet, le coût dépendra du temps nécessaire. Par exemple, il faut compter entre 2500$ et 3500$ pour un site vitrine. Pour de plus gros projets, le tarif se fera en fonction du temps. Je vous enverrais ensuite un devis.</p>
-        </div>
-        <div class="faq1 faq3">
-          <div class="left">
-            <img src="img/settings.svg" alt="">
-            <h4> Et après ?</h4>
-          </div>
-          <div class="hr"></div>
-          <p>Vous pourrez modifier le contenu grâce au logiciel (CMS) fournit! Des heures de formation sont incluses pour vous apprendre à modifier ou ajouter du contenu.</p>
-        </div>
-        <div class="faq1 faq5">
-          <div class="left">
-            <img src="img/moon.svg" alt="">
-            <h4> Dormez <br> tranquille</h4>
-          </div>
-          <div class="hr"></div>
-          <p>Vous pouvez me laisser le support et la mise à jour de votre contenu, sur la base d’un abonnement mensuel.</p>
-        </div>
     </section>
 
-<div id="realisation"></div>
 
-      <section class="sec5" id="sec5">
+    <div class="title">
+      <div class="orange"></div>
+      <div class="texttitle anim-typewriter">
+        <div class="line line1">
+          <p>01 </p>
+          <div class="textcontain">
+            <h5> D'abord il nous faut une</h5>
+            <div class="hide"></div>
+          </div>
+        </div>
+        <div class="line line2">
+          <p>02</p>
+          <div class="textcontain">
+            <h5> <span>idée</span> ... </h5>
+            <div class="hide"></div>
+          </div>
+        </div>
 
-        <h2 > Mes plus belles réalisations  <img src="img/starss.svg" alt=""> </h2>
+        <div class="line line3">
+          <p>03 </p>
+          <div class="textcontain">
+            <h5> Ensuite une analyse et une </h5>
+            <div class="hide"></div>
+          </div>
+        </div>
+        <div class="line line4">
+          <p>04</p>
+          <div class="textcontain">
+            <h5> <span>direction </span> ... </h5>
+            <div class="hide"></div>
+          </div>
+        </div>
+        <div class="line line5">
+          <p>05 </p>
+          <div class="textcontain">
+            <h5> La créativité prend place </h5>
+            <div class="hide"></div>
+          </div>
+        </div>
+        <div class="line line6">
+          <p>06</p>
+          <div class="textcontain">
+            <h5> pour le <span>design</span>.</h5>
+            <div class="hide"></div>
+          </div>
+        </div>
+        <div class="line line7">
+          <p>07 </p>
+          <div class="textcontain">
+            <h5> Pour finir, je <span>code</span> et </h5>
+            <div class="hide"></div>
+          </div>
+        </div>
+        <div class="line line8">
+          <p>08</p>
+          <div class="textcontain">
+            <h5> je <span>publie</span> votre <span>site web </span> ! </h5>
+            <div class="hide"></div>
+          </div>
+        </div>
+        <div class="line line9">
+          <p>09</p>
+          <div class="textcontain">
+            <h5> Vous vous demandez sûrement </h5>
+            <div class="hide"></div>
+          </div>
+        </div>
+        <div class="line line10">
+          <p>10</p>
+          <div class="textcontain">
+            <h5> ...</h5>
+            <div class="hide"></div>
+          </div>
+        </div>
 
-        <div class="cards">
+      </div>
+    </div>
 
-  <div id="awwwards" style="position: fixed;  transform: translateY(-50%); top: 50%;  right: 0"><a href="https://www.awwwards.com/sites/brice-clain-portfolio-2022" target="_blank"><svg width="53.08" height="171.358"><path class="js-color-bg" fill="#9BD4D7" d="M0 0h53.08v171.358H0z"></path><g class="js-color-text" fill="#fff"><path d="M20.047 153.665v-1.9h3.888v-4.093h-3.888v-1.9h10.231v1.9h-4.59v4.093h4.59v1.9zM29.898 142.236c-.331.565-.784.997-1.359 1.294s-1.222.446-1.944.446c-.721 0-1.369-.149-1.943-.446a3.316 3.316 0 0 1-1.36-1.294c-.331-.564-.497-1.232-.497-2.002s.166-1.438.497-2.002a3.316 3.316 0 0 1 1.36-1.294c.574-.297 1.223-.445 1.943-.445.723 0 1.369.148 1.944.445a3.307 3.307 0 0 1 1.359 1.294c.331.564.497 1.232.497 2.002s-.166 1.438-.497 2.002m-1.703-3.347c-.435-.33-.967-.496-1.601-.496-.633 0-1.166.166-1.601.496-.433.332-.649.78-.649 1.346 0 .564.217 1.013.649 1.345.435.331.968.497 1.601.497.634 0 1.166-.166 1.601-.497.435-.332.649-.78.649-1.345.001-.566-.214-1.014-.649-1.346M22.911 134.852v-1.813h1.186a3.335 3.335 0 0 1-.951-1.009 2.423 2.423 0 0 1-.352-1.271c0-.682.19-1.229.57-1.645.381-.413.932-.621 1.652-.621h5.262v1.812h-4.721c-.419 0-.727.096-.921.285-.195.19-.292.447-.292.769 0 .302.115.58.35.833.234.254.577.458 1.03.613.454.156.993.234 1.616.234h2.938v1.813h-7.367zM29.898 125.136a3.314 3.314 0 0 1-1.359 1.294c-.575.297-1.222.445-1.944.445-.721 0-1.369-.148-1.943-.445a3.322 3.322 0 0 1-1.36-1.294c-.331-.565-.497-1.232-.497-2.002 0-.771.166-1.438.497-2.003a3.313 3.313 0 0 1 1.36-1.293c.574-.297 1.223-.446 1.943-.446.723 0 1.369.149 1.944.446s1.028.728 1.359 1.293.497 1.232.497 2.003c.001.769-.166 1.436-.497 2.002m-1.703-3.347c-.435-.331-.967-.497-1.601-.497-.633 0-1.166.166-1.601.497-.433.331-.649.778-.649 1.345 0 .564.217 1.013.649 1.344.435.332.968.498 1.601.498.634 0 1.166-.166 1.601-.498.435-.331.649-.779.649-1.344.001-.567-.214-1.014-.649-1.345M22.911 117.75v-1.812h1.199c-.419-.265-.742-.586-.972-.966s-.345-.784-.345-1.213c0-.272.05-.569.146-.892l1.682.336a1.429 1.429 0 0 0-.205.76c0 .576.261 1.048.783 1.418.521.37 1.342.557 2.461.557h2.617v1.812h-7.366zM29.812 111.252c-.391.511-.857.851-1.403 1.016l-.776-1.446c.381-.138.68-.329.893-.577.215-.249.321-.544.321-.885a1.2 1.2 0 0 0-.168-.658c-.112-.175-.294-.263-.548-.263-.225 0-.406.105-.548.313-.142.21-.291.534-.446.973-.019.068-.058.17-.117.307-.224.565-.506 1.004-.848 1.315-.34.313-.779.467-1.314.467-.381 0-.727-.102-1.039-.306a2.185 2.185 0 0 1-.744-.84 2.554 2.554 0 0 1-.279-1.207c0-.497.105-.949.314-1.359.211-.408.506-.725.886-.949l.993 1.082c-.43.292-.644.686-.644 1.184a.84.84 0 0 0 .154.504.471.471 0 0 0 .401.212c.176 0 .338-.103.49-.307.15-.205.334-.604.547-1.199.205-.564.474-1.001.805-1.308.332-.308.756-.46 1.271-.46.721 0 1.299.229 1.732.687s.65 1.057.65 1.797c.001.759-.194 1.396-.583 1.907M35.481 17.006l-4.782 14.969h-3.266l-2.584-9.682-2.584 9.682h-3.268l-4.782-14.969h3.713l2.673 10.276 2.525-10.276h3.445l2.524 10.276 2.674-10.276zM37.978 27.163c1.426 0 2.496 1.068 2.496 2.495 0 1.425-1.07 2.495-2.496 2.495-1.425 0-2.494-1.07-2.494-2.495-.001-1.427 1.069-2.495 2.494-2.495"></path></g></svg></a></div>
 
-          
-          <div class="card" style="background-color:#E9FFFF ; background-image: linear-gradient(rgb(255, 255, 255),#E9FFFF, rgb(255, 255, 255));;">
-            <div class="img">
-              <img class="im1" src="img/pe.png" alt="">
-              <img src="img/pe2.png" alt="">
-            </div>
+    <section class="sec2" id="sec2">
 
-            <h4>.Period</h4>
+      <div class="message">
+        <div class="period m1">
+          <img src="img/LogoPeriod.png" alt="miniature period">
+          <h3>J’ai besoin d’un <span>site web</span> pour ma <span>compagnie</span>, PERIOD. <br> On se specialise dans
+            la mise en marché de produits d'hygiène féminine <br> écoresponsable et non genré.
+          </h3>
+        </div>
+        <div class="moi m2">
+          <h3>D’accord, super !
+            <br> Je m'occupe de tout, d'abord le <span>design</span> que je vous partage. Une fois validé, <br> je
+            <span>développe</span> votre <span>site web</span>, avant de le mettre en ligne !
+          </h3>
+          <img src="img/profile.png" alt="">
+        </div>
+        <div class="period m3">
+          <img src="img/LogoPeriod.png" alt="">
+          <h3> Parfait, on commence quand :) ?
+          </h3>
+        </div>
+      </div>
+      <div class="button">
+        <a class="btnsec2" onclick="scrollacc2()">
+          <p>Maintenant !</p>
+          <img src="img/ardown.svg" alt="">
+        </a>
+      </div>
 
-            <div class="aww">
-              <img src="img/aww.svg" alt="">
-              <a href="https://www.designrush.com/agency/branding/trends/best-menstrual-product-branding#mcetoc_1gepakcjj3j" target="_blank">
-                 Best design award
-               </a>
-            </div>
-            <div class="lien">
-              <img src="img/out.svg" alt="">
-              <a href="https://www.behance.net/gallery/140018865/PERIOD-Web-Design" target="_blank">Design web</a>
-            </div>
+
+    </section>
+
+    <section class="sec3" id="sec3">
+      <div class="zone2" id="zone2">
+        <div class="ens">
+          <div class="anal yo">
+            <h3> <img src="img/idea.svg" alt=""> Analyse du marché</h3>
+            <p>Les concurrents visent un public ciblé essentiellement genre féminin. De plus leur design est pour la
+              plupart très générique / concret: peu d’illustrations, plutôt “froid”, surtout lorsque l’écologie est mise
+              en avant.</p>
           </div>
 
-          <div class="card" style="background-color:#F5FFF8 ; background-image: linear-gradient(rgb(255, 255, 255),#d5ffe1, rgb(255, 255, 255));;">
-            <div class="img">
-              <img class="im1" src="img/ma.png" alt="">
-              <img src="img/ma2.png" alt="">
-            </div>
+          <div class="difi yo">
+            <h3> <img src="img/pb.svg" alt=""> Problématique</h3>
+            <p>Le public cible est large. Il faut donc parler à tous les genres, mais ne pas perdre le public définit
+              comme “féminin”.</p>
+          </div>
+        </div>
+      </div>
 
-            <h4>.Mackin</h4>
+      <div class="zone3" id="zone3">
+        <div class="solu" id="solu">
+          <h3>Solution</h3>
+        </div>
+      </div>
+    </section>
 
-            <div class="lien">
-              <img src="img/out.svg" alt="">
-              <a href="https://www.behance.net/gallery/138308179/MACKIN-Web-Design" target="_blank">Design web</a>
-              <a href="https://www.behance.net/gallery/137392989/MACKIN-logo-design-et-branding" target="_blank">
-                Logo et image de marque
-               </a>
-            </div>
+
+    <section class="sec4" id="sec4">
+      <div class="design">
+        <img class="pe" id="pe1" src="img/period-min.png" alt="">
+        <img class="mac" src="img/mac-min.png" alt="">
+      </div>
+      <div class="arg">
+        <div class="arg1" style="z-index: 10;">
+          <img src="img/focus.svg" alt="">
+          <h5> Mettre en avant le produit</h5>
+          <p>Mettre en avant son utilité permet de s'adresser à une clientèle neutre.</p>
+        </div>
+
+        <div class="arg1">
+          <img src="img/star.svg" alt="">
+          <h5> Page légère et chaleureuse</h5>
+          <p> Grâce aux couleurs, aux bordures et aux illustrations. </p>
+        </div>
+      </div>
+
+
+
+      <div class="mobile">
+        <img class="pem" id="pe2" src="img/periodmobile.png" alt="">
+        <img class="iphone" src="img/iphone.png" alt="">
+      </div>
+    </section>
+
+
+    <section class="sec4mobile" id="sec4">
+
+      <div class="arg">
+        <div class="arg1" style="z-index: 10;">
+          <img src="img/focus.svg" alt="">
+          <h4> Mettre en avant le produit</h4>
+          <p>Mettre en avant son utilité permet de s'adresser à une clienèle neutre.</p>
+        </div>
+        <div class="arg1">
+          <img src="img/star.svg" alt="">
+          <h4> Page légère et chaleureuse</h4>
+          <p> Grâce aux couleurs, aux bordures et aux illustrations. </p>
+        </div>
+      </div>
+
+      <div class="design">
+        <img class="pe" id="pe2" src="img/period-min.png" alt="">
+        <img class="mac" src="img/mac2.png" alt="">
+      </div>
+
+
+
+
+
+      <div class="mobile">
+        <img class="pem" src="img/periodmobile.png" alt="">
+        <img class="iphone" src="img/iphone.png" alt="">
+      </div>
+    </section>
+
+
+    <section class="faq">
+      <div class="faq1 faq2">
+        <div class="left">
+          <img src="img/devis.svg" alt="">
+          <h4> Combien <br> ça coute ?</h4>
+        </div>
+        <div class="hr"></div>
+        <p>Parlez-moi de votre projet, le coût dépendra du temps nécessaire. Par exemple, il faut compter entre 2500$ et
+          3500$ pour un site vitrine. Pour de plus gros projets, le tarif se fera en fonction du temps. Je vous
+          enverrais ensuite un devis.</p>
+      </div>
+      <div class="faq1 faq3">
+        <div class="left">
+          <img src="img/settings.svg" alt="">
+          <h4> Et après ?</h4>
+        </div>
+        <div class="hr"></div>
+        <p>Vous pourrez modifier le contenu grâce au logiciel (CMS) fournit! Des heures de formation sont incluses pour
+          vous apprendre à modifier ou ajouter du contenu.</p>
+      </div>
+      <div class="faq1 faq5">
+        <div class="left">
+          <img src="img/moon.svg" alt="">
+          <h4> Dormez <br> tranquille</h4>
+        </div>
+        <div class="hr"></div>
+        <p>Vous pouvez me laisser le support et la mise à jour de votre contenu, sur la base d’un abonnement mensuel.
+        </p>
+      </div>
+    </section>
+
+    <div id="realisation"></div>
+
+    <section class="sec5" id="sec5">
+
+      <h2> Mes plus belles réalisations <img src="img/starss.svg" alt=""> </h2>
+
+      <div class="cards">
+
+        <div id="awwwards" style="position: fixed;  transform: translateY(-50%); top: 50%;  right: 0"><a
+            href="https://www.awwwards.com/sites/brice-clain-portfolio-2022" target="_blank"><svg width="53.08"
+              height="171.358">
+              <path class="js-color-bg" fill="#9BD4D7" d="M0 0h53.08v171.358H0z"></path>
+              <g class="js-color-text" fill="#fff">
+                <path
+                  d="M20.047 153.665v-1.9h3.888v-4.093h-3.888v-1.9h10.231v1.9h-4.59v4.093h4.59v1.9zM29.898 142.236c-.331.565-.784.997-1.359 1.294s-1.222.446-1.944.446c-.721 0-1.369-.149-1.943-.446a3.316 3.316 0 0 1-1.36-1.294c-.331-.564-.497-1.232-.497-2.002s.166-1.438.497-2.002a3.316 3.316 0 0 1 1.36-1.294c.574-.297 1.223-.445 1.943-.445.723 0 1.369.148 1.944.445a3.307 3.307 0 0 1 1.359 1.294c.331.564.497 1.232.497 2.002s-.166 1.438-.497 2.002m-1.703-3.347c-.435-.33-.967-.496-1.601-.496-.633 0-1.166.166-1.601.496-.433.332-.649.78-.649 1.346 0 .564.217 1.013.649 1.345.435.331.968.497 1.601.497.634 0 1.166-.166 1.601-.497.435-.332.649-.78.649-1.345.001-.566-.214-1.014-.649-1.346M22.911 134.852v-1.813h1.186a3.335 3.335 0 0 1-.951-1.009 2.423 2.423 0 0 1-.352-1.271c0-.682.19-1.229.57-1.645.381-.413.932-.621 1.652-.621h5.262v1.812h-4.721c-.419 0-.727.096-.921.285-.195.19-.292.447-.292.769 0 .302.115.58.35.833.234.254.577.458 1.03.613.454.156.993.234 1.616.234h2.938v1.813h-7.367zM29.898 125.136a3.314 3.314 0 0 1-1.359 1.294c-.575.297-1.222.445-1.944.445-.721 0-1.369-.148-1.943-.445a3.322 3.322 0 0 1-1.36-1.294c-.331-.565-.497-1.232-.497-2.002 0-.771.166-1.438.497-2.003a3.313 3.313 0 0 1 1.36-1.293c.574-.297 1.223-.446 1.943-.446.723 0 1.369.149 1.944.446s1.028.728 1.359 1.293.497 1.232.497 2.003c.001.769-.166 1.436-.497 2.002m-1.703-3.347c-.435-.331-.967-.497-1.601-.497-.633 0-1.166.166-1.601.497-.433.331-.649.778-.649 1.345 0 .564.217 1.013.649 1.344.435.332.968.498 1.601.498.634 0 1.166-.166 1.601-.498.435-.331.649-.779.649-1.344.001-.567-.214-1.014-.649-1.345M22.911 117.75v-1.812h1.199c-.419-.265-.742-.586-.972-.966s-.345-.784-.345-1.213c0-.272.05-.569.146-.892l1.682.336a1.429 1.429 0 0 0-.205.76c0 .576.261 1.048.783 1.418.521.37 1.342.557 2.461.557h2.617v1.812h-7.366zM29.812 111.252c-.391.511-.857.851-1.403 1.016l-.776-1.446c.381-.138.68-.329.893-.577.215-.249.321-.544.321-.885a1.2 1.2 0 0 0-.168-.658c-.112-.175-.294-.263-.548-.263-.225 0-.406.105-.548.313-.142.21-.291.534-.446.973-.019.068-.058.17-.117.307-.224.565-.506 1.004-.848 1.315-.34.313-.779.467-1.314.467-.381 0-.727-.102-1.039-.306a2.185 2.185 0 0 1-.744-.84 2.554 2.554 0 0 1-.279-1.207c0-.497.105-.949.314-1.359.211-.408.506-.725.886-.949l.993 1.082c-.43.292-.644.686-.644 1.184a.84.84 0 0 0 .154.504.471.471 0 0 0 .401.212c.176 0 .338-.103.49-.307.15-.205.334-.604.547-1.199.205-.564.474-1.001.805-1.308.332-.308.756-.46 1.271-.46.721 0 1.299.229 1.732.687s.65 1.057.65 1.797c.001.759-.194 1.396-.583 1.907M35.481 17.006l-4.782 14.969h-3.266l-2.584-9.682-2.584 9.682h-3.268l-4.782-14.969h3.713l2.673 10.276 2.525-10.276h3.445l2.524 10.276 2.674-10.276zM37.978 27.163c1.426 0 2.496 1.068 2.496 2.495 0 1.425-1.07 2.495-2.496 2.495-1.425 0-2.494-1.07-2.494-2.495-.001-1.427 1.069-2.495 2.494-2.495">
+                </path>
+              </g>
+            </svg></a>
           </div>
 
-          <div class="card" style="background-color:#EDEDED ;background-image: linear-gradient(rgb(255, 255, 255),#EDEDED, rgb(255, 255, 255));">
-            <div class="img">
-              <img class="im1" src="img/ac.png" alt="">
-              <img src="img/ac2.png" alt="">
-            </div>
-            
-            <h4>.Ac Avocats</h4>
-
-            <div class="lien">
-              <img src="img/out.svg" alt="">
-              <a href="https://www.behance.net/gallery/136904571/Ac-Avocats-Web-design" target="_blank">Design web</a>
-              <a href="https://www.behance.net/gallery/136911673/Ac-Avocats-Logo-design-Branding" target="_blank">
-                Logo et image de marque
-               </a>
-            </div>
-          </div>
-          
-          <div id="first" class="card" style="background-color: #E6FFFE; background-image: linear-gradient(rgb(255, 255, 255),#E6FFFE, rgb(255, 255, 255));">
-            <div class="img">
-              <img class="im1" src="img/li.png" alt="">
-              <img src="img/li2.png" alt="">
-            </div>
-
-            <h4>.Limbia</h4>
-
-            <div class="lien">
-              <img src="img/out.svg" alt="">
-              <a href="https://www.behance.net/gallery/136901719/Limbia-Logo-design-Branding" target="_blank">
-                Logo et image de marque
-               </a>
-              <a href="https://www.behance.net/gallery/136901895/Limbia-App-design" target="_blank">App design</a>
-            </div>
+          <div class="card"
+          style="background-color:#F5FFF8 ; background-image: linear-gradient(rgb(255, 255, 255),#a8e0e08c,#ffec8b7e, rgb(255, 255, 255));;">
+          <div class="img">
+            <img class="im1" src="img/Byka1.png" alt="">
+            <img src="img/Byka2.png" alt="">
           </div>
 
-          <div class="card" style="background-color:#ffffff ; background-image: linear-gradient(rgb(255, 255, 255),#ffffff, rgb(255, 255, 255));">
-            <div class="img" style="">
-              <img class="im1" src="img/lo.png" alt="">
-              <img src="img/lo2.png" alt="">
-            </div>
+          <h4>.Bykahomes</h4>
 
-            <h4>.Loin</h4>
+          <div class="lien">
+            <img src="img/out.svg" alt="">
+            <a href="https://www.behance.net/gallery/202888025/SAAS-UXUI-Booking-and-management-by-Brice"
+              target="_blank">Web design / Présentation</a>
+          </div>
+        </div>
 
-            <div class="lien">
-              <img src="img/out.svg" alt="">
-              <a href="https://www.behance.net/gallery/135137141/Concept-site-web-pour-agence-de-voyage" target="_blank">Design web</a>
-              <a href="https://www.behance.net/gallery/135137001/Concept-logo-agence-de-voyage-LOIN" target="_blank">
-                Logo et image de marque
-               </a>
-            </div>
+          <div class="card"
+          style="background-color:#F5FFF8 ; background-image: linear-gradient(rgb(255, 255, 255),#FFE6C5, rgb(255, 255, 255));;">
+          <div class="img">
+            <img class="im1" src="img/Noje 1.png" alt="">
+            <img src="img/Noje 2.png" alt="">
           </div>
 
-          <div id="prev">
-            <img src="" width="40px" />
+          <h4>.Noje</h4>
+
+          <div class="lien">
+            <img src="img/out.svg" alt="">
+            <a href="https://www.behance.net/gallery/202888841/Web-Design-for-Noje-a-Swedish-coffee-shop-by-Brice"
+              target="_blank">Web design / Présentation</a>
+          </div>
+        </div>
+
+        <div class="card"
+          style="background-color:#F5FFF8 ; background-image: linear-gradient(rgb(255, 255, 255),#fbffde, rgb(255, 255, 255));;">
+          <div class="img">
+            <img class="im1" src="img/Champ1.png" alt="">
+            <img src="img/Champ2.png" alt="">
+          </div>
+
+          <h4>.Champsprès Investissement</h4>
+
+          <div class="lien">
+            <img src="img/out.svg" alt="">
+            <a href="https://www.behance.net/gallery/202882267/Design-UXUI-Wine-investment-by-Brice"
+              target="_blank">Web design / Présentation</a>
+          </div>
+        </div>
+
+        <div class="card"
+          style="background-color:#F5FFF8 ; background-image: linear-gradient(rgb(255, 255, 255),#E2F8FF, rgb(255, 255, 255));;">
+          <div class="img">
+            <img class="im1" src="img/Zeq1.png" alt="">
+            <img src="img/Zeq2.png" alt="">
+          </div>
+
+          <h4>.Zequin</h4>
+
+          <div class="lien">
+            <img src="img/out.svg" alt="">
+            <a href="https://www.behance.net/gallery/202889213/Logo-design-for-a-Horse-care-company-Zequin-by-Brice"
+              target="_blank">Logo design</a>
+          </div>
+        </div>
+
+        <div class="card"
+          style="background-color:#F5FFF8 ; background-image: linear-gradient(rgb(255, 255, 255),#f7bac6, rgb(255, 255, 255));;">
+          <div class="img">
+            <img class="im1" src="img/Ici 1.png" alt="">
+            <img src="img/Ici 2.png" alt="">
+          </div>
+
+          <h4>.Ici Fripperie</h4>
+
+          <div class="lien">
+            <img src="img/out.svg" alt="">
+            <a href="https://www.behance.net/gallery/202889751/Thrift-Store-Web-design-for-Ici-Friperie-by-Brice"
+              target="_blank">Web design / Présentation</a>
+          </div>
+        </div>
+
+        <div class="card"
+          style="background-color:#E9FFFF ; background-image: linear-gradient(rgb(255, 255, 255),#E9FFFF, rgb(255, 255, 255));;">
+          <div class="img">
+            <img class="im1" src="img/pe.png" alt="">
+            <img src="img/pe2.png" alt="">
+          </div>
+
+          <h4>.Period</h4>
+
+          <div class="aww">
+            <img src="img/aww.svg" alt="">
+            <a href="https://www.designrush.com/agency/branding/trends/best-menstrual-product-branding#mcetoc_1gepakcjj3j"
+              target="_blank">
+              Best design award
+            </a>
+          </div>
+          <div class="lien">
+            <img src="img/out.svg" alt="">
+            <a href="https://www.behance.net/gallery/140018865/PERIOD-Web-Design" target="_blank">Web design /
+              Présentation</a>
+          </div>
+        </div>
+
+        <div class="card"
+          style="background-color:#F5FFF8 ; background-image: linear-gradient(rgb(255, 255, 255),#d5ffe1, rgb(255, 255, 255));;">
+          <div class="img">
+            <img class="im1" src="img/ma.png" alt="">
+            <img src="img/ma2.png" alt="">
+          </div>
+
+          <h4>.Mackin</h4>
+
+          <div class="lien">
+            <img src="img/out.svg" alt="">
+            <a href="https://www.behance.net/gallery/138308179/MACKIN-Web-Design" target="_blank">Web design /
+              Présentation</a>
+            <a href="https://www.behance.net/gallery/137392989/MACKIN-logo-design-et-branding" target="_blank">
+              Logo et image de marque
+            </a>
+          </div>
+        </div>
+
+        <div class="card"
+          style="background-color:#EDEDED ;background-image: linear-gradient(rgb(255, 255, 255),#EDEDED, rgb(255, 255, 255));">
+          <div class="img">
+            <img class="im1" src="img/ac.png" alt="">
+            <img src="img/ac2.png" alt="">
+          </div>
+
+          <h4>.Ac Avocats</h4>
+
+          <div class="lien">
+            <img src="img/out.svg" alt="">
+            <a href="https://www.behance.net/gallery/136904571/Ac-Avocats-Web-design" target="_blank">Web design /
+              Présentation</a>
+            <a href="https://www.behance.net/gallery/136911673/Ac-Avocats-Logo-design-Branding" target="_blank">
+              Logo et image de marque
+            </a>
+          </div>
+        </div>
+
+        <div id="first" class="card"
+          style="background-color: #E6FFFE; background-image: linear-gradient(rgb(255, 255, 255),#E6FFFE, rgb(255, 255, 255));">
+          <div class="img">
+            <img class="im1" src="img/li.png" alt="">
+            <img src="img/li2.png" alt="">
+          </div>
+
+          <h4>.Limbia</h4>
+
+          <div class="lien">
+            <img src="img/out.svg" alt="">
+            <a href="https://www.behance.net/gallery/136901719/Limbia-Logo-design-Branding" target="_blank">
+              Logo et image de marque
+            </a>
+            <a href="https://www.behance.net/gallery/136901895/Limbia-App-design" target="_blank">App design</a>
+          </div>
+        </div>
+
+        <div class="card"
+          style="background-color:#ffffff ; background-image: linear-gradient(rgb(255, 255, 255),#ffffff, rgb(255, 255, 255));">
+          <div class="img" style="">
+            <img class="im1" src="img/lo.png" alt="">
+            <img src="img/lo2.png" alt="">
+          </div>
+
+          <h4>.Loin</h4>
+
+          <div class="lien">
+            <img src="img/out.svg" alt="">
+            <a href="https://www.behance.net/gallery/135137141/Concept-site-web-pour-agence-de-voyage"
+              target="_blank">Web design / Présentation</a>
+            <a href="https://www.behance.net/gallery/135137001/Concept-logo-agence-de-voyage-LOIN" target="_blank">
+              Logo et image de marque
+            </a>
+          </div>
+        </div>
+
+        <div id="prev">
+          <img src="" width="40px" />
         </div>
         <div id="next">
-            <img src="img/next.svg" width="32px" />
+          <img src="img/next.svg" width="32px" />
         </div>
 
-          
+
+      </div>
+
+      <h3 class="autre">Toutes mes réalisations sont disponible sur <a href="https://www.behance.net/briceclain"
+          target="_blank">Behance</a> pour le design, et sur <a href="https://github.com/bclain"
+          target="_blank">Github</a> pour le code</h3>
+
+    </section>
+    <img id="nextimg" src="img/next.svg" />
+    <img id="previmg" src="img/back.svg" />
+    <section class="sec6">
+
+      <div class="txt">
+        <h1> BRICE CLAIN </h1>
+        <h3> Trois-rivières (Quebec)</h3>
+
+        <h5> Je design et développe des sites web, beaux, intuitifs, et accessibles. </h2>
+          <p>Je me passionne pour le design graphique et le développement web. Cette association créative entre logique
+            du code et esthétique du design me permet de travailler efficacement dans les deux domaines, sans
+            intermédiaire. </p>
+
+          <h5>Je crée aussi votre image de marque, votre logo, votre bannière… </h2>
+            <p>Je peux vous fournir une identité de marque et un site web, à partir d’une simple idée. Mes
+              collaborateurs apprécient ma polyvalence. La qualité de mon travail est assurée par mon expérience en
+              agence.</p>
+
+            <a href="https://www.linkedin.com/in/brice-clain-853852189/" target="_blank">Découvrir mon parcour
+              (Linkedin)</a>
+
+
+      </div>
+
+      <div class="comp">
+        <div class="cdes">
+          <h4>.Design graphique et ux/ui</h4>
+          <div class="citem">
+            <img class="" src="img/tech/item1.svg" alt="">
+            <img class="" src="img/tech/item2.svg" alt="">
+            <img class="" src="img/tech/item21.svg" alt="">
+            <img class="" src="img/tech/item22.svg" alt="">
+          </div>
         </div>
-
-        <h3 class="autre">Toutes mes réalisations sont disponible sur <a href="https://www.behance.net/briceclain" target="_blank">Behance</a> pour le design, et sur <a href="https://github.com/bclain" target="_blank">Github</a> pour le code</h3>
-
-      </section>
-      <img id="nextimg" src="img/next.svg" />
-      <img id="previmg" src="img/backk.svg" />
-      <section class="sec6">
-
-        <div class="txt">
-          <h1> BRICE CLAIN  </h1>
-          <h3> Trois-rivières (Quebec)</h3>
-
-          <h5> Je design et développe des sites web, beaux, intuitifs, et accessibles. </h2>
-           <p>Je me passionne pour le design graphique et le développement web. Cette association créative entre logique du code et esthétique du design me permet de travailler efficacement dans les deux domaines, sans intermédiaire.  </p>
-           
-           <h5>Je crée aussi votre image de marque, votre logo, votre bannière… </h2>
-            <p>Je peux vous fournir une identité de marque et un site web, à partir d’une simple idée. Mes collaborateurs apprécient ma polyvalence. La qualité de mon travail est assurée par mon expérience en agence.</p>
-       
-            <a href="https://www.linkedin.com/in/brice-clain-853852189/" target="_blank">Découvrir mon parcour (Linkedin)</a>
-          
-
+        <div class="cdev">
+          <h4>.Développement web</h4>
+          <div class="citem">
+            <img class="" src="img/tech/item3.svg" alt="">
+            <img class="" src="img/tech/item4.svg" alt="">
+            <img class="" src="img/tech/item5.svg" alt="">
+            <img class="" src="img/tech/item6.svg" alt="">
+            <img class="" src="img/tech/item7.svg" alt="">
+            <img class="" src="img/tech/item8.svg" alt="">
+          </div>
         </div>
-
-            <div class="comp">
-              <div class="cdes">
-                <h4>.Design graphique et ux/ui</h4>
-                <div class="citem">
-                  <img class="" src="img/tech/item1.svg" alt="">
-                  <img class="" src="img/tech/item2.svg" alt="">
-                  <img class="" src="img/tech/item21.svg" alt="">
-                  <img class="" src="img/tech/item22.svg" alt="">
-                </div>
-              </div>
-              <div class="cdev">
-                <h4>.Développement web</h4>
-                <div class="citem">
-                  <img class="" src="img/tech/item3.svg" alt="">
-                  <img class="" src="img/tech/item4.svg" alt="">
-                  <img class="" src="img/tech/item5.svg" alt="">
-                  <img class="" src="img/tech/item6.svg" alt="">
-                  <img class="" src="img/tech/item7.svg" alt="">
-                  <img class="" src="img/tech/item8.svg" alt="">
-                </div>
-              </div>
-            </div>
-        <div class="bottom"> © Brice </div>
-      </section>
+      </div>
+      <div class="bottom"> © Brice </div>
+    </section>
 
 
-    </div>
- 
-    
+  </div>
+
+
 
 
   <script>
 
 
-        //loader
-        window.onload = function() {
-      tl= new gsap.timeline()
-      .from(window, {duration: .5, scrollTo:".faq1", 
-     onStart: () => {document.documentElement.style.scrollBehavior = "auto";},
-  onComplete: () => {$(".lback").removeClass('chargement');document.documentElement.style.scrollBehavior = "smooth",$(".loading").addClass('en');$(".s1").addClass('s1content');$(".menu").addClass('menuh');}})
+    //loader
+    window.onload = function () {
+      tl = new gsap.timeline()
+        .from(window, {
+          duration: .5, scrollTo: ".faq1",
+          onStart: () => { document.documentElement.style.scrollBehavior = "auto"; },
+          onComplete: () => { $(".lback").removeClass('chargement'); document.documentElement.style.scrollBehavior = "smooth", $(".loading").addClass('en'); $(".s1").addClass('s1content'); $(".menu").addClass('menuh'); }
+        })
     };
 
-     //Bouton form
-        $("#boutontr").click(function(){
+    //Bouton form
+    $("#boutontr").click(function () {
       $(".contact_back").addClass("cbactive");
       $(".contact").addClass("cactive");
-      
+
     });
 
     //Bouton retour form
-    $(".retour").click(function(){
+    $(".retour").click(function () {
       $("#err").html(" ");
       $("#succ").html(" ");
       $(".contact_back").removeClass("cbactive");
       $(".contact").removeClass("cactive");
     });
 
-    $(".contact_back").click(function(){
+    $(".contact_back").click(function () {
       $("#err").html(" ");
       $("#succ").html(" ");
       $(".contact_back").removeClass("cbactive");
       $(".contact").removeClass("cactive");
     });
-    
+
 
     // Formulaire 
 
 
-    function courchange(){
-      if( document.querySelector('[name="email"]').value.length===0){
-      $(".c1").removeClass("tactive")
+    function courchange() {
+      if (document.querySelector('[name="email"]').value.length === 0) {
+        $(".c1").removeClass("tactive")
       }
-      else{
+      else {
         $(".c1").addClass("tactive")
       }
     }
 
-    function nomchange(){
-      if( document.querySelector('[name="name"]').value.length===0){
-      $(".c2").removeClass("tactive")
+    function nomchange() {
+      if (document.querySelector('[name="name"]').value.length === 0) {
+        $(".c2").removeClass("tactive")
       }
-      else{
+      else {
         $(".c2").addClass("tactive")
       }
     }
 
-    function projetchange(){
-      if( document.querySelector('[name="message"]').value.length===0){
-      $(".c3").removeClass("tactive")
+    function projetchange() {
+      if (document.querySelector('[name="message"]').value.length === 0) {
+        $(".c3").removeClass("tactive")
       }
-      else{
+      else {
         $(".c3").addClass("tactive")
       }
     }
 
-    document.querySelector('button').addEventListener('click', (e)=>{
+    document.querySelector('button').addEventListener('click', (e) => {
       e.preventDefault();
       const contactForm = document.querySelector('#form');
       const email = document.querySelector('[name="email"]');
       const nom = document.querySelector('[name="name"]');
       const message = document.querySelector('[name="message"]');
       // validation before sending the data
-      if(nom.value.length===0 ||email.value.length===0 || message.value.length===0){
+      if (nom.value.length === 0 || email.value.length === 0 || message.value.length === 0) {
         $("#succ").html("")
         $("#err").html(" Veillez remplir tous les champs !")
-        ;}
-      else if(!email.value.match(/^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/)){
-        $("#succ").html("")
-        $("#err").html(" Veillez rentrer une adresse email valide...");   
+          ;
       }
-      else{
+      else if (!email.value.match(/^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/)) {
+        $("#succ").html("")
+        $("#err").html(" Veillez rentrer une adresse email valide...");
+      }
+      else {
         $("#err").html("");
         $(".c1").removeClass("tactive")
         $(".c2").removeClass("tactive")
         $(".c3").removeClass("tactive")
-        let data = new FormData(contactForm);  
+        let data = new FormData(contactForm);
         fetch("https://formbold.com/s/oPxbo", { method: "POST", body: data });
         $("#succ").html(" Message envoyé avec succés !")
         contactForm.reset()
@@ -663,67 +800,73 @@
 
 
     //image swipper right
-    $('#next').mousemove(function(e){
+    $('#next').mousemove(function (e) {
       $('#nextimg').addClass('visible');
       $('#nextimg').css({
-          left:e.pageX, top:e.pageY
-        });
-    }).mouseleave(function(){
+        left: e.pageX, top: e.pageY
+      });
+    }).mouseleave(function () {
       $('#nextimg').removeClass('visible');
     });
 
     //image swipper realisation
-    $('#prev').mousemove(function(e){
+    $('#prev').mousemove(function (e) {
       $('#previmg').addClass('visible');
       $('#previmg').css({
-          left:e.pageX, top:e.pageY
-        });
-    }).mouseleave(function(){
+        left: e.pageX, top: e.pageY
+      });
+    }).mouseleave(function () {
       $('#previmg').removeClass('visible');
     });
 
     // Bar de scroll top
-    window.onscroll = function() {myFunction()};
+    window.onscroll = function () { myFunction() };
 
     function myFunction() {
       var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
       var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
       var scrolled = (winScroll / height) * 100;
-      document.getElementById("myBar").style.width = scrolled + "%";
+      document.getElementById("myBar").style.height = scrolled + "%";
     }
 
     //retour en haut de la page quand on reload
     window.onbeforeunload = function () {
       window.scrollTo(0, 0);
     }
-   
+
     //menu
 
-    $("#boutontr").click(function(){
+    $("#boutontr").click(function () {
       $(".contact_back").addClass("cbactive");
       $(".contact").addClass("cactive");
     });
 
-    function qu(){
-     gsap.to(window, {duration: 1, scrollTo:{y: ".sec6", offsetX: 0}, 
-     onStart: () => {document.documentElement.style.scrollBehavior = "auto";$(".men").addClass('click');},
-  onComplete: () => {document.documentElement.style.scrollBehavior = "smooth";$(".men").removeClass('click');}});
-   }
-    function rea(){
-      gsap.to(window, {duration: 1, scrollTo:"#realisation", 
-     onStart: () => {document.documentElement.style.scrollBehavior = "auto";$(".men").addClass('click');},
-  onComplete: () => {document.documentElement.style.scrollBehavior = "smooth";$(".men").removeClass('click');}});
+    function qu() {
+      gsap.to(window, {
+        duration: 1, scrollTo: { y: ".sec6", offsetX: 0 },
+        onStart: () => { document.documentElement.style.scrollBehavior = "auto"; $(".men").addClass('click'); },
+        onComplete: () => { document.documentElement.style.scrollBehavior = "smooth"; $(".men").removeClass('click'); }
+      });
     }
-    function acc(){
-      gsap.to(window, {duration: 1, scrollTo:".sec1", 
-     onStart: () => {document.documentElement.style.scrollBehavior = "auto";$(".men").addClass('click');},
-  onComplete: () => {document.documentElement.style.scrollBehavior = "smooth";$(".men").removeClass('click');}});
+    function rea() {
+      gsap.to(window, {
+        duration: 1, scrollTo: "#realisation",
+        onStart: () => { document.documentElement.style.scrollBehavior = "auto"; $(".men").addClass('click'); },
+        onComplete: () => { document.documentElement.style.scrollBehavior = "smooth"; $(".men").removeClass('click'); }
+      });
+    }
+    function acc() {
+      gsap.to(window, {
+        duration: 1, scrollTo: ".sec1",
+        onStart: () => { document.documentElement.style.scrollBehavior = "auto"; $(".men").addClass('click'); },
+        onComplete: () => { document.documentElement.style.scrollBehavior = "smooth"; $(".men").removeClass('click'); }
+      });
     }
 
     $(".select").toggleClass("active");
-    $(".select img").attr('src',"img/acca.svg");
+    $(".select img").attr('src', "img/acca.svg");
 
-    $(".item").hover(function() {
+    $(".item").hover(function () {
       $(".select").toggleClass("active");
       $(this).toggleClass("active");
     })
@@ -731,27 +874,27 @@
     function men1() {
       meni();
       $(".ac").addClass('select');
-      $(".ac img").attr('src',"img/acca.svg");
+      $(".ac img").attr('src', "img/acca.svg");
       menc()
     }
 
     function men2() {
       meni();
       $(".rea").addClass('select');
-      $(".rea img").attr('src',"img/reaa.svg");
+      $(".rea img").attr('src', "img/reaa.svg");
       menc()
     }
 
     function men3() {
       meni();
       $(".qu").addClass('select');
-      $(".qu img").attr('src',"img/bioa.svg");
+      $(".qu img").attr('src', "img/bioa.svg");
       menc()
     }
     function meni() {
-      $(".ac img").attr('src',"img/acc.svg");
-      $(".rea img").attr('src',"img/rea.svg");
-      $(".qu img").attr('src',"img/bio.svg");
+      $(".ac img").attr('src', "img/acc.svg");
+      $(".rea img").attr('src', "img/rea.svg");
+      $(".qu img").attr('src', "img/bio.svg");
       $(".item").removeClass('select');
       $(".item").removeClass('active');
     }
@@ -770,66 +913,69 @@
     const el6 = document.querySelector(".item6");
     const el7 = document.querySelector(".item7");
     const el8 = document.querySelector(".item8");
-    
-    
+
+
     content.addEventListener("mousemove", (e) => {
       el.style.marginLeft = 0;
-      el2.style.marginTop= 0;
+      el2.style.marginTop = 0;
       el3.style.marginTop = 0;
-      el4.style.marginTop= 0;
+      el4.style.marginTop = 0;
       el5.style.marginLeft = 0;
-      el6.style.marginLeft= 0;
+      el6.style.marginLeft = 0;
       el7.style.marginLeft = 0;
-      el8.style.marginLeft= 0;
-      el.style.marginLeft = (-e.offsetX/60.5)+ "px";
-      el2.style.marginTop= (e.offsetX/60.2)+ "px";
-      el3.style.marginTop = (e.offsetX/60.7)+ "px";
-      el4.style.marginTop= (-e.offsetX/64.3)+ "px";
-      el5.style.marginLeft = (-e.offsetX/67.6)+ "px";
-      el6.style.marginLeft= (e.offsetX/65.4)+ "px";
-      el7.style.marginLeft = (-e.offsetX/60)+ "px";
-      el8.style.marginLeft= (e.offsetX/60.7)+ "px";
+      el8.style.marginLeft = 0;
+      el.style.marginLeft = (-e.offsetX / 60.5) + "px";
+      el2.style.marginTop = (e.offsetX / 60.2) + "px";
+      el3.style.marginTop = (e.offsetX / 60.7) + "px";
+      el4.style.marginTop = (-e.offsetX / 64.3) + "px";
+      el5.style.marginLeft = (-e.offsetX / 67.6) + "px";
+      el6.style.marginLeft = (e.offsetX / 65.4) + "px";
+      el7.style.marginLeft = (-e.offsetX / 60) + "px";
+      el8.style.marginLeft = (e.offsetX / 60.7) + "px";
     });
-    
-    Draggable.create(".men", {trigger:".drag", inertia: true, bounds: "body" });
 
-  //scroll
-  var scrollEventHandler = function()
-{
-  window.scroll(0, window.pageYOffset)
-}
+    Draggable.create(".men", { trigger: ".drag", inertia: true, bounds: "body" });
 
-
-window.addEventListener("scroll", scrollEventHandler, false);
-
-  function scrollacc2(){
-    gsap.to(window, {duration: 1, scrollTo:{y: ".sec2", offsetY: -300},
-     onStart: () => {document.documentElement.style.scrollBehavior = "auto";},
-  onComplete: () => {document.documentElement.style.scrollBehavior = "smooth";}});
-  }
-
-  function scrollacc(){
-    gsap.to(window, {duration: 1, scrollTo:{y: "#sec2", offsetX: 0},
-     onStart: () => {document.documentElement.style.scrollBehavior = "auto";},
-  onComplete: () => {document.documentElement.style.scrollBehavior = "smooth";}});
-  }
+    //scroll
+    var scrollEventHandler = function () {
+      window.scroll(0, window.pageYOffset)
+    }
 
 
+    window.addEventListener("scroll", scrollEventHandler, false);
 
-// animations
+    function scrollacc2() {
+      gsap.to(window, {
+        duration: 1, scrollTo: { y: ".sec2", offsetY: -300 },
+        onStart: () => { document.documentElement.style.scrollBehavior = "auto"; },
+        onComplete: () => { document.documentElement.style.scrollBehavior = "smooth"; }
+      });
+    }
 
-    const anim = gsap.from(".title", { opacity:0, y: -100, duration: .2  })
-    const anim2 = gsap.from(".m1", { opacity:0, x: -100, duration: .2  })
-    const anim3 = gsap.from(".m2", { opacity:0, x: 100, duration: .2  })
-    const anim4 = gsap.from(".m3", { opacity:0, x: -100, duration: .2  })
-    const anim5 = gsap.from(".mac", { y:100,opacity:0, duration: .3  })
-    const anim51 = gsap.from(".mobile", .5, { y:100,opacity:0, duration: .3  })
-    const anim6 = gsap.from("#pe1", { y:-100,opacity:0,y:-100, duration: .5  })
-    const anim7 = gsap.from(".sec3", {scale:.6, y:100, opacity:.4, duration: .4  })
-    const anim8 = gsap.to(".ens", {  scale:0.9,y:-80, opacity:.9, duration: .5  })
-    const anim9 = gsap.from("#solu", {  scale:2,y:40, opacity:0,duration: .5  })
-    const faq = gsap.from(".faq1 p ", .5, {y: 100,ease: "power4.out",  delay: .2,  opacity:0,  skewY: 7,  stagger: {    amount: 0.3}})
-    const anal = gsap.from(".yo p ", .5, {y: 100,ease: "power4.out",  delay: .2,  opacity:0,  skewY: 7,  stagger: {    amount: 0.3}})
+    function scrollacc() {
+      gsap.to(window, {
+        duration: 1, scrollTo: { y: "#sec2", offsetX: 0 },
+        onStart: () => { document.documentElement.style.scrollBehavior = "auto"; },
+        onComplete: () => { document.documentElement.style.scrollBehavior = "smooth"; }
+      });
+    }
+
+
+
+    // animations
+
+    const anim = gsap.from(".title", { opacity: 0, y: -100, duration: .2 })
+    const anim2 = gsap.from(".m1", { opacity: 0, x: -100, duration: .2 })
+    const anim3 = gsap.from(".m2", { opacity: 0, x: 100, duration: .2 })
+    const anim4 = gsap.from(".m3", { opacity: 0, x: -100, duration: .2 })
+    const anim5 = gsap.from(".mac", { y: 100, opacity: 0, duration: .3 })
+    const anim51 = gsap.from(".mobile", .5, { y: 100, opacity: 0, duration: .3 })
+    const anim6 = gsap.from("#pe1", { y: -100, opacity: 0, y: -100, duration: .5 })
+    const anim7 = gsap.from(".sec3", { scale: .6, y: 100, opacity: .4, duration: .4 })
+    const anim8 = gsap.to(".ens", { scale: 0.9, y: -80, opacity: .9, duration: .5 })
+    const anim9 = gsap.from("#solu", { scale: 2, y: 40, opacity: 0, duration: .5 })
+    const faq = gsap.from(".faq1 p ", .5, { y: 100, ease: "power4.out", delay: .2, opacity: 0, skewY: 7, stagger: { amount: 0.3 } })
+    const anal = gsap.from(".yo p ", .5, { y: 100, ease: "power4.out", delay: .2, opacity: 0, skewY: 7, stagger: { amount: 0.3 } })
 
     anim.pause(0)
     anim2.pause(0)
@@ -848,14 +994,14 @@ window.addEventListener("scroll", scrollEventHandler, false);
     ScrollTrigger.create({
       trigger: ".sec2",
       start: "top 50%",
-      onEnter: () => {anim.play(), $(".title").removeClass('title1'), $(".title").addClass('title1')},
-      onLeaveBack: ()=> {anim.reverse(),$(".title").removeClass('title1')}
+      onEnter: () => { anim.play(), $(".title").removeClass('title1'), $(".title").addClass('title1') },
+      onLeaveBack: () => { anim.reverse(), $(".title").removeClass('title1') }
     });
 
     ScrollTrigger.create({
       trigger: ".sec2",
       start: "top 50%",
-      onEnter: () => {anim2.play()}
+      onEnter: () => { anim2.play() }
     });
 
     ScrollTrigger.create({
@@ -869,148 +1015,149 @@ window.addEventListener("scroll", scrollEventHandler, false);
       start: "top 30%",
       onEnter: () => anim4.play()
     });
-  
+
     ScrollTrigger.create({
       trigger: ".sec2",
       start: "top bottom",
-      onLeaveBack: () => {anim.reverse(),anim2.pause(0),anim3.pause(0),anim4.pause(0)}
+      onLeaveBack: () => { anim.reverse(), anim2.pause(0), anim3.pause(0), anim4.pause(0) }
     });
 
     /*section 3*/
     ScrollTrigger.create({
       trigger: ".sec2",
       start: "top -20%",
-      onEnter: () => {anal.play(), anim7.play(),$(".title").removeClass('title1'), $(".title").addClass('title2')},
-      onLeaveBack: () => {anal.reverse(),anim7.reverse(),$(".title").removeClass('title2'), $(".title").addClass('title1')}
+      onEnter: () => { anal.play(), anim7.play(), $(".title").removeClass('title1'), $(".title").addClass('title2') },
+      onLeaveBack: () => { anal.reverse(), anim7.reverse(), $(".title").removeClass('title2'), $(".title").addClass('title1') }
     });
 
 
     ScrollTrigger.create({
       trigger: ".sec4",
       start: "top 75%",
-      onEnter: () => { anim6.play(), anim8.play(), anim9.play(), $(".title").removeClass('title2'),$(".title").addClass('title3')},
-      onLeaveBack: () => {anim6.reverse(),anim8.reverse(),anim9.reverse(),$(".title").removeClass('title3'),$(".title").addClass('title2')},
+      onEnter: () => { anim6.play(), anim8.play(), anim9.play(), $(".title").removeClass('title2'), $(".title").addClass('title3') },
+      onLeaveBack: () => { anim6.reverse(), anim8.reverse(), anim9.reverse(), $(".title").removeClass('title3'), $(".title").addClass('title2') },
     });
 
-        /*section 4*/
+    /*section 4*/
 
 
     if ($(window).width() < 1025) {
-        ScrollTrigger.create({
-            trigger: ".sec4mobile",
-            start: "110% bottom ",
-            onEnter: () => {anim5.play(), anim51.play(),$(".title").removeClass('title3'),$(".title").addClass('title4'), $(".arg1").addClass('dn')},
-            onLeaveBack: () => {anim5.reverse(),anim51.reverse(), $(".title").removeClass('title4'),$(".title").addClass('title3'),$(".arg1").removeClass('dn')},
-          });
+      ScrollTrigger.create({
+        trigger: ".sec4mobile",
+        start: "110% bottom ",
+        onEnter: () => { anim5.play(), anim51.play(), $(".title").removeClass('title3'), $(".title").addClass('title4'), $(".arg1").addClass('dn') },
+        onLeaveBack: () => { anim5.reverse(), anim51.reverse(), $(".title").removeClass('title4'), $(".title").addClass('title3'), $(".arg1").removeClass('dn') },
+      });
     }
     else {
       ScrollTrigger.create({
-          trigger: ".pe",
-          start: "20% top ",
-          onEnter: () => {anim5.play(), anim51.play(),$(".title").removeClass('title3'),$(".title").addClass('title4'), $(".arg1").addClass('dn')},
-          onLeaveBack: () => {anim5.reverse(),anim51.reverse(), $(".title").removeClass('title4'),$(".title").addClass('title3'),$(".arg1").removeClass('dn')},
-        });
-
-    }
-    
-  //section réalisations scroll
-  ScrollTrigger.create({
-        trigger: ".sec5",
-        start: "top 30%",
-        onEnter: () => {anim.reverse(),  men2()},
-        onLeaveBack: () => {anim.play(), men1()}
+        trigger: ".pe",
+        start: "20% top ",
+        onEnter: () => { anim5.play(), anim51.play(), $(".title").removeClass('title3'), $(".title").addClass('title4'), $(".arg1").addClass('dn') },
+        onLeaveBack: () => { anim5.reverse(), anim51.reverse(), $(".title").removeClass('title4'), $(".title").addClass('title3'), $(".arg1").removeClass('dn') },
       });
 
-      //faq
-  ScrollTrigger.create({
-        trigger: ".faq",
-        start: "top 50%",
-        onEnter: () => {faq.play(),$(".title").removeClass('title4'),$(".title").addClass('title5')},
-        onLeaveBack: () => {faq.reverse(),$(".title").removeClass('title5'),$(".title").addClass('title4')}
-      });
+    }
 
-        //section qui suis-je
-  ScrollTrigger.create({
-        trigger: ".sec6",
-        start: "top 40%",
-        onEnter: () => {$("#boutontr").addClass('active'), men3()},
-        onLeaveBack: () => {$("#boutontr").removeClass('active'), men2()}
-      });
+    //section réalisations scroll
+    ScrollTrigger.create({
+      trigger: ".sec5",
+      start: "top 30%",
+      onEnter: () => { anim.reverse(), men2() },
+      onLeaveBack: () => { anim.play(), men1() }
+    });
+
+    //faq
+    ScrollTrigger.create({
+      trigger: ".faq",
+      start: "top 50%",
+      onEnter: () => { faq.play(), $(".title").removeClass('title4'), $(".title").addClass('title5') },
+      onLeaveBack: () => { faq.reverse(), $(".title").removeClass('title5'), $(".title").addClass('title4') }
+    });
+
+    //section qui suis-je
+    ScrollTrigger.create({
+      trigger: ".sec6",
+      start: "top 40%",
+      onEnter: () => { $("#boutontr").addClass('active'), men3() },
+      onLeaveBack: () => { $("#boutontr").removeClass('active'), men2() }
+    });
 
 
 
 
 
-  //section réalisations auto scroll
-  function loopNext(){
-    $('.cards').stop().animate({scrollLeft:'+=200'}, 'fast', 'linear', loopNext);
+    //section réalisations auto scroll
+    function loopNext() {
+      $('.cards').stop().animate({ scrollLeft: '+=200' }, 'fast', 'linear', loopNext);
     }
 
 
-    function loopPrev(){
-        $('.cards').stop().animate({scrollLeft:'-=200'}, 'fast', 'linear', loopPrev);
+    function loopPrev() {
+      $('.cards').stop().animate({ scrollLeft: '-=200' }, 'fast', 'linear', loopPrev);
     }
 
-    function stop(){
-        $('.cards').stop();
+    function stop() {
+      $('.cards').stop();
     }
 
 
     $('#next').hover(function () {
       loopNext();
-    },function () {
+    }, function () {
       stop();
     });
 
     $('#prev').hover(function () {
       loopPrev();
-    },function () {
+    }, function () {
       stop();
     });
 
 
-var smoothScroll = {
-    speed: 0,
-    delay: 10, // en ms
-    timer: null,
-    scrollSpeed: 1.2,
-    inertia: 0.95,
-    init: function(){
+    var smoothScroll = {
+      speed: 0,
+      delay: 10, // en ms
+      timer: null,
+      scrollSpeed: 1.2,
+      inertia: 0.95,
+      init: function () {
         this.setEventsListeners();
-    },
-    setEventsListeners: function(){
+      },
+      setEventsListeners: function () {
         var me = this;
-        $(document).bind('DOMMouseScroll mousewheel', function(e){
-            me.setSpeed(e.originalEvent);
+        $(document).bind('DOMMouseScroll mousewheel', function (e) {
+          me.setSpeed(e.originalEvent);
         });
-	 },
-    setSpeed: function(e){
+      },
+      setSpeed: function (e) {
         var direction = e.detail ? -e.detail : e.wheelDelta;
-    	this.speed += direction < 0 ? -this.scrollSpeed : this.scrollSpeed;
-    	if(this.timer == null){
-    		this.timer = setTimeout(this.smoothScroll, this.delay, this); 
-    	}
-    	e.preventDefault();
-    },
-    smoothScroll: function(scope){
-		var self = scope;
-    	self.speed *= self.inertia;
+        this.speed += direction < 0 ? -this.scrollSpeed : this.scrollSpeed;
+        if (this.timer == null) {
+          this.timer = setTimeout(this.smoothScroll, this.delay, this);
+        }
+        e.preventDefault();
+      },
+      smoothScroll: function (scope) {
+        var self = scope;
+        self.speed *= self.inertia;
 
         var currScrollTop = $(window).scrollTop();
-        $(window).scrollTop(currScrollTop-self.speed);
+        $(window).scrollTop(currScrollTop - self.speed);
 
-    	if(self.speed < self.inertia && self.speed > -self.inertia){
-    		self.speed = 0;
-    		clearTimeout(self.timer);
-    		self.timer = null;
-    	}else{
-    		self.timer = setTimeout(self.smoothScroll, self.delay, self);
-    	}
+        if (self.speed < self.inertia && self.speed > -self.inertia) {
+          self.speed = 0;
+          clearTimeout(self.timer);
+          self.timer = null;
+        } else {
+          self.timer = setTimeout(self.smoothScroll, self.delay, self);
+        }
+      }
     }
-}
-/*
-smoothScroll.init();
-*/
+    /*
+    smoothScroll.init();
+    */
   </script>
 </body>
+
 </html>

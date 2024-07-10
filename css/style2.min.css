@@ -145,14 +145,17 @@ html, body {
   transition: 200ms ease-in-out;
 }
 
-.contact .retour:hover{  
-  transition: 200ms ease-in-out;
-  transform: translateX(-2%);
+.contact .retour:hover{   
 }
-
 .contact .retour img{
   height: 34px; 
   margin: 10px;
+  transition: 200ms ease-in-out;
+}
+
+.contact .retour:hover img{
+  transition: 200ms ease-in-out;
+  transform: translateX(-5px);
 }
 
 
@@ -371,7 +374,7 @@ margin-left: 5vh;
     position: fixed;
     border-radius: 0;
     height: 100%;
-    background-color: #F6F9F7;
+    background-color: white;
     text-align: center;
     z-index: 100;
     transition: 200ms ease-in-out;
@@ -427,8 +430,9 @@ margin-left: 5vh;
 
 .men .active h5{
   color: var(--lien); 
-  background-color: white;
+  background-color: var(--white);
   transition: 50ms ease-in-out;
+  border-left: var(--lien) 2px solid;
   border-radius: 5px;
   padding: 10px 15px;
   text-align: left;
@@ -475,11 +479,11 @@ justify-content: flex-end;
   transition: 50ms ease-in-out;
 }
 
-#boutontr:hover{
-  transform: scale(1.2);
-  transition: 150ms ease-in-out;
+#boutontr:hover{ 
+  background-color:  rgb(0, 0, 54); 
   box-shadow: none;
   cursor: pointer;
+  transition: 100ms ease-in-out ;
 }
 
 #boutontr{
@@ -491,38 +495,61 @@ justify-content: flex-end;
   background-color: var(--lien);
   border-radius: 5px;
   padding:5px 25px ;
-  display: flex;
-  transition: 150ms ease-in-out; 
+  display: flex; 
   overflow: hidden;
   animation: app 1s forwards;
+  transition: 200ms ease-in-out ;
 }
 
-#boutontr.active{
+#boutontrac{ 
+  top: 5%;
+  right: 5%;
+  width: fit-content;
+  background-color: var(--lien);
+  border-radius: 5px;
+  padding:5px 25px ;
+  display: flex; 
+  overflow: hidden;
+  animation: app 1s forwards;
+  transition: 200ms ease-in-out;
+}
+ 
+
+#boutontr.active, #boutontrac.active{
   top: 40%;
   right: 10%;
   scale: 1.3;
-  transition: 300ms ease-in-out;
+  transition: 200ms ease-in-out;
   bottom: inherit;
+}
+
+#boutontr .ar img, #boutontrac .ar img{    
+  width: 300px;
+  margin-left: -280px;
+  transition: 150ms ease-in-out ;
+}
+
+#boutontr:hover .ar img, #boutontrac:hover .ar img{
+  width: 300px;
+  margin-left: -260px;
+  transition: 150ms ease-in-out ;
 }
 
 
 
-#boutontr h4{
+#boutontr h4,   #boutontrac h4{
   color: var(--white);
   font-weight: 700;
   margin: 0;
   line-height: 150%;
 }
 
-#boutontr .ar{
+#boutontr .ar, #boutontrac .ar{ 
 display: flex;
 width: 20px;
 }
 
-#boutontr .ar img{
-    width: 200px;
-    margin-left: -175px;
-  }
+
 
 .content{
   animation: app 1s forwards;
@@ -534,8 +561,8 @@ width: 20px;
   /*anim menu*/
 
   .menu:hover{ 
-    width: calc((100vw/12)*2.6);
-    transition: 150ms ease-in-out;
+    /* width: calc((100vw/12)*2.6);
+    transition: 150ms ease-in-out; */
   }
   .menuh{
     box-shadow:inherit;
@@ -555,20 +582,20 @@ width: 20px;
 
   /*accueil*/
   .progress-container {
-    width: var(--content);
-    height: 4px;
+    height: 100vh;
+    width: 2px;
     background: #ccc;
     position: fixed;
     top: 0;
-    right: 0;
+    left: calc((100vw / 12)* 2.5);;
     z-index: 10;
     background-color: #f1f1f1;
   }
   
   .progress-bar {
-    height: 4px;
+    height: 0;
     background: var(--primary);
-    width: 0;
+    width: 2px;
     transition: width 0.2s ease-out;
   }
   
@@ -759,7 +786,7 @@ width: 20px;
     display: flex;
     border-radius: 5px;
     padding: 10px 13px;
-    background-color: var(--white);
+    background-color: white;
     grid-column: 1;
     grid-row: 1;
     z-index: 1;
@@ -1578,6 +1605,20 @@ height: 30px;
     z-index: 30;
 }
 
+#nextimg, #previmg{ 
+    position: absolute;
+    visibility: hidden;
+    transform: translateX(-50%) translateY(-50%);
+    pointer-events: none;
+    width: 2vw;
+
+}
+
+#previmg.visible, #nextimg.visible{
+  visibility: visible;
+  cursor: none;
+}
+
 #next img{
   top: 50%;
   left: 50%;
@@ -1586,7 +1627,7 @@ height: 30px;
 }
 
 #next:hover {
-cursor: url("../img/next.svg"), auto;
+cursor: none;
 z-index: 30;
 }
 
@@ -1597,14 +1638,14 @@ z-index: 30;
 #prev {
   margin-left:calc((100vw/12)*2.5);;
     height: 400px;
-    width: 30px;
+    width: 50px;
     position: absolute;
     left: 0;
     z-index: 60;
 }
 
 #prev:hover{
-  cursor: url("../img/backk.svg"), auto;
+  cursor: none;
   z-index: 30;
 }
    
@@ -1722,8 +1763,7 @@ z-index: 30;
   }
 
   .card:hover{
-    box-shadow:none;
-    width: 600px;
+    box-shadow:none; 
     box-shadow:inset 5px 5px 40px 0px rgba(0, 0, 0, 0.066);
   }
 
@@ -1747,7 +1787,7 @@ z-index: 30;
 
   .card a:hover{
     text-decoration: underline;
-    color: #FF2E00;
+    color: #746aff;
     transition: 100ms ease-in-out;
   }
 
@@ -2450,6 +2490,43 @@ left:inherit;
 
   }
 
+}
+
+.fade{
+  background: linear-gradient(137deg,#ffffff,#b8ceff,#004fff,#ffffff);
+  background-size: 240% 240%;
+  animation: gradient-animation 5s ease infinite;
+}
+
+.fade2{
+  background: linear-gradient(137deg,#ffffff,#b8ceff,#002e92,#002279);
+  background-size: 240% 240%;
+  animation: gradient-animation 5s ease infinite;
+}
+
+
+
+.backbottom::before{
+  content: "";
+  height: 20vh;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background: linear-gradient(137deg,#ffffff,#ffffff,#cbdcff,#ffffff);
+  background-size: 240% 240%;
+  animation: gradient-animation 5s ease infinite;
+}
+
+.backbottom::after{
+  content: "";
+  width: 100%;
+  height: 20vh;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background: linear-gradient(180deg,#ffffff,#ffffff00);
+  background-size: 100%;
 }
 
 .orange {
