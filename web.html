@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/stylett.css">
+    <link rel="icon" type="image/png" href="icon.png"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <title>Tiktok Accueil</title>
+    <style>
+ .popup {
+            display: none;
+            position: fixed;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            width: 90%;
+            max-width: 600px;
+            padding: 20px;
+            background-color: white;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+            z-index: 1000;
+            overflow-y: auto;
+            max-height: 80vh;
+        }
+        .popup .close {
+            position: absolute;
+            right:20px;
+            top: 10px;
+            cursor: pointer;
+            font-size: 20px;
+            scale: 2;
+        }
+        .popup-overlay {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+            z-index: 999;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="content">
+
+        <div class="top">   
+            <img src="img/profile.png" alt="">
+            <div class="right">
+                <h1>Brice</h1>
+                <h5>.Web .Branding .Marketing .DevPerso</h5>
+                <a  href="mailto: contact@briceclain.com">contact@briceclain.com</a>
+                <a href="tel: 001-819-608-8335">(+1) 819 609 8335</a>
+            </div>
+        </div>
+
+        <div class="section">
+            <div class="orange"></div>
+            
+            <div class="orange2"></div>
+            <h2>Je crée le site web de vos rêves 💻✨ </h2>
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLScMhRaPoVPSWwR80RPmOeyk5CkSxI0uMSyKTir4qP9zsfjllA/viewform?fbzx=1486205537212188356">
+                <button class="button-tt" >Obtenir un devis</button>
+            </a>
+             
+        </div>
+    
+        <div class="section">
+            <div class="orange"></div>
+            
+            <div class="orange2"></div>
+            <h2>Consultation et mentorat 🧠↗️</h2>
+            <p>.Web .Branding .Marketing .DevPerso</p>
+            <a href="https://calendly.com/br-clain/coaching60minutes">
+                <button href="https://square.link/u/MZbZhs5M" class="button-tt">Réserver un appel</button>
+            </a>
+        </div>
+    
+        <div class="section">
+            <div class="orange"></div>
+            
+            <div class="orange2"></div>
+            <h2>Formations bientôt disponibles 🗒✍️</h2>
+            <form id="form">
+                <input type="text" name="email" placeholder="Votre adresse email*">
+                <input type="text" name="sujet" placeholder="Votre adresse email*" style="display: none;" value="Demande formation"> 
+                <p id="err"></p>
+                <p id="succ"></p>
+                <button class="button-tt emailsubmit" type="submit">Être informé</button>
+                <p>En appuyant sur "Être informé", vous acceptez notre <a href="#" id="privacy-link">politique de confidentialité</a>.</p>
+            </form>
+        </div>
+    
+        <div class="reseaux">
+            <a class="rleft" href="https://www.instagram.com/brice.web/"><img src="img/reseaux/in.svg" alt="instagram"></a>
+            <a href="https://www.linkedin.com/in/brice-clain-853852189/"><img src="img/reseaux/ln.svg" alt="linkedin"></a>
+            <a class="rleft" href="https://www.tiktok.com/@brice.web"><img src="img/reseaux/tt.svg" alt="tiktok"></a>
+            <a href="https://www.behance.net/briceclain"><img src="img/reseaux/yt.svg" alt="youtube"></a>
+            <a href="https://briceclain.com/" class="portfolio">Voir mon portfolio</a>
+        </div>
+
+    </div>
+
+    <!-- Popup and overlay for privacy policy -->
+    <div class="popup-overlay"></div>
+    <div class="popup">
+        <span class="close"><p>&times;</p></span>
+        <h2>Politique de Confidentialité</h2>
+        <p>Nous accordons une grande importance à la protection de votre vie privée. Cette politique de confidentialité décrit comment nous recueillons, utilisons et protégeons vos informations personnelles lorsque vous utilisez notre site web.</p>
+        <h3>1. Collecte des Informations</h3>
+        <p>Lorsque vous vous inscrivez à notre newsletter ou que vous fournissez votre adresse e-mail sur notre landing page, nous collectons les informations suivantes :</p>
+        <ul>
+            <li>Adresse e-mail</li>
+        </ul>
+        <h3>2. Utilisation des Informations</h3>
+        <p>Les informations que nous collectons peuvent être utilisées de la manière suivante :</p>
+        <ul>
+            <li>Pour personnaliser votre expérience utilisateur</li>
+            <li>Pour améliorer notre site web</li>
+            <li>Pour envoyer des e-mails périodiques concernant des informations, des offres spéciales ou des mises à jour</li>
+        </ul>
+        <h3>3. Protection des Informations</h3>
+        <p>Nous mettons en œuvre une variété de mesures de sécurité pour préserver la sécurité de vos informations personnelles. Vos informations personnelles sont conservées sur des réseaux sécurisés et ne sont accessibles qu'à un nombre limité de personnes ayant des droits d'accès spéciaux à ces systèmes, et sont tenues de garder les informations confidentielles.</p>
+        <h3>4. Divulgation à des Tiers</h3>
+        <p>Nous ne vendons, n'échangeons, ni ne transférons vos informations personnelles identifiables à des tiers. Cela n'inclut pas les tiers de confiance qui nous aident à exploiter notre site Web, à mener nos affaires, ou à vous servir, tant que ces parties conviennent de garder ces informations confidentielles.</p>
+        <h3>5. Consentement</h3>
+        <p>En utilisant notre site et en fournissant votre adresse e-mail, vous consentez à notre politique de confidentialité.</p>
+        <h3>6. Modification de notre Politique de Confidentialité</h3>
+        <p>Nous nous réservons le droit de modifier cette politique de confidentialité à tout moment. Toute modification de la politique de confidentialité sera publiée sur cette page.</p>
+        <h3>7. Contactez-nous</h3>
+        <p>Si vous avez des questions concernant cette politique de confidentialité, vous pouvez nous contacter à l'adresse suivante :</p>
+        <p>E-mail : <a href="mailto:contact@briceclain.com">contact@briceclain.com</a></p>
+    </div>
+
+    <script>
+        // Function to handle the popup
+        $(document).ready(function() {
+            $('#privacy-link').click(function(e) {
+                e.preventDefault();
+                $('.popup-overlay').fadeIn();
+                $('.popup').fadeIn();
+            });
+
+            $('.popup .close, .popup-overlay').click(function() {
+                $('.popup-overlay').fadeOut();
+                $('.popup').fadeOut();
+            });
+        });
+
+        document.querySelector('.emailsubmit').addEventListener('click', (e)=>{
+            e.preventDefault();
+            const contactForm = document.querySelector('#form');
+            const email = document.querySelector('[name="email"]');
+            const sujet = document.querySelector('[name="sujet"]');
+            
+            // validation before sending the data
+            if(email.value.length===0){
+                $("#err").html(" Veillez entrer une adresse email.")
+                ;}
+            else if(!email.value.match(/^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/)){
+                $("#err").html(" Veillez entrer une adresse email valide...");
+            }
+            else{
+                let data = new FormData(contactForm);  
+                fetch("https://formbold.com/s/oPxbo", { method: "POST", body: data });
+                $("#succ").html(" Adresse email envoyé avec succés !")
+                $("#err").html("")
+                contactForm.reset()
+            }
+        });
+    </script>
+
+</body>
+</html>
