@@ -2,20 +2,11 @@
 <html lang="fr">
 
 <head>
-  <!-- Google tag (gtag.js) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-8HSXP45WGL"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag() { dataLayer.push(arguments); }
-    gtag('js', new Date());
-
-    gtag('config', 'G-8HSXP45WGL');
-  </script>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale = 1, maximum-scale=3.0, minimum-scale=1">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <meta property="og:url" content=" https://briceclain.com/ ">
-  <meta property="og:image" content=" https://briceclain.com/img/profil1.png ">
+  <meta property="og:image" content=" https://briceclain.com/img/profile.png ">
   <meta property="og:description"
     content="Salut, moi c'est Brice! Je design et développe des sites web. Je design aussi votre image de marque, logo... ">
   <meta property="og:title" content=" Brice Clain, designer graphique et developpeur web. ">
@@ -32,6 +23,25 @@
 </head>
 
 <body class="my-scrollbar">
+
+  <div id="myModal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <div id="modal-text"></div>
+    </div>
+  </div>
+  <div class="cookie-popup" id="cookie-popup">
+    <h4>Nous utilisons des cookies</h4>
+    <p>Ce site utilise des cookies pour améliorer votre expérience. En continuant à naviguer sur ce site, vous acceptez
+      notre utilisation des cookies.</p>
+    <div class="cookie-buttons">
+      <button class="accept" onclick="acceptCookies()">Accepter</button>
+      <button class="decline" onclick="declineCookies()">Décliner</button>
+    </div>
+  </div>
+  <button class="cookie-manager-btn" id="cookie-manager-btn" onclick="showCookiePopup()">
+    <img src="img/cookie.svg" alt="">
+  </button>
 
 
   <div class="contact_back">
@@ -72,7 +82,7 @@
       <p id="err"></p>
       <p id="succ"></p>
       <div class="input_group">
-        <button type="submit">Envoyer</button>
+        <button type="submit" >Envoyer</button>
       </div>
     </form>
 
@@ -166,18 +176,13 @@
     <div class="progress-container ">
       <div class="progress-bar fade2 " id="myBar"></div>
     </div>
+
+
+
     <section class="sec1" id="#sec1">
       <div class="back">
         <div class="backbottom"> <span></span></div>
       </div>
-      <img class=" it item1 purple" src="img/tech/item1.svg" alt="Figma">
-      <img class=" it item2" src="img/tech/item2.svg" alt="Adobe xd">
-      <img class=" it item3" src="img/tech/item3.svg" alt="">
-      <img class=" it item4" src="img/tech/item4.svg" alt="">
-      <img class=" it item5" src="img/tech/item5.svg" alt="">
-      <img class=" it item6" src="img/tech/item6.svg" alt="">
-      <img class=" it item7" src="img/tech/item7.svg" alt="">
-      <img class=" it item8" src="img/tech/item8.svg" alt="">
 
 
       <img id="imgprofil" src="img/profile.png" alt="">
@@ -209,7 +214,23 @@
           </div>
         </div>
         <h4>Je design aussi votre image de marque, logo...</h4>
+        <div class="slider">
+          <div class="slides">
+            <div class="slide active">
+              <img src="img/Noje 1.png" alt="Projet 1">
+            </div>
+            <div class="slide">
+              <img src="img/Champ1.png" alt="Projet 1">
+            </div> 
+            <div class="slide">
+              <img src="img/Byka1.png" alt="Projet 3">
+            </div>
+            <!-- Ajoutez plus de projets ici -->
+          </div>
+        </div>
       </div>
+
+
 
 
 
@@ -725,19 +746,19 @@
 
         <h5> Je conçois et développe des sites web à la fois élégants, intuitifs et accessibles. </h5>
         <br>
-          <p>Animé par une passion profonde pour le design graphique et le développement web, je me spécialise dans
-            l’harmonisation de la logique du code avec l’esthétique du design. Cela assure une intervention efficace sur
-            tous les aspects du projet, sans intermédiaire. </p>
+        <p>Animé par une passion profonde pour le design graphique et le développement web, je me spécialise dans
+          l’harmonisation de la logique du code avec l’esthétique du design. Cela assure une intervention efficace sur
+          tous les aspects du projet, sans intermédiaire. </p>
 
-          <h5>Je me spécialise également dans la création de votre image de marque : logo, bannière et bien plus encore.
-            </h5>
-            <br>
-            <p>À partir d’une simple idée, une identité de marque unique et un site web d'exception sont réalisés. Mes
-              clients apprécient ma polyvalence et la qualité de mon travail, forgée par une expérience significative en
-              agence.</p>
-<br>
-            <a href="https://www.linkedin.com/in/brice-clain-853852189/" target="_blank">Découvrir mon parcour
-              (Linkedin)</a>
+        <h5>Je me spécialise également dans la création de votre image de marque : logo, bannière et bien plus encore.
+        </h5>
+        <br>
+        <p>À partir d’une simple idée, une identité de marque unique et un site web d'exception sont réalisés. Mes
+          clients apprécient ma polyvalence et la qualité de mon travail, forgée par une expérience significative en
+          agence.</p>
+        <br>
+        <a href="https://www.linkedin.com/in/brice-clain-853852189/" target="_blank">Découvrir mon parcour
+          (Linkedin)</a>
 
 
       </div>
@@ -765,7 +786,12 @@
           </div>
         </div>
       </div>
-      <div class="bottom"> © Brice </div>
+      <div class="bottom">
+        <div> © Brice <a href="#" id="privacy-policy-link">Politique de Confidentialité</a> |
+          <a href="#" id="legal-notice-link">Mentions Légales</a>
+        </div>
+      </div>
+
     </section>
 
 
@@ -786,6 +812,149 @@
           onComplete: () => { $(".lback").removeClass('chargement'); document.documentElement.style.scrollBehavior = "smooth", $(".loading").addClass('en'); $(".s1").addClass('s1content'); $(".menu").addClass('menuh'); }
         })
     };
+
+
+    //mentions 
+    // Get the modal
+    var modal = document.getElementById("myModal");
+
+    // Get the <span> element that closes the modal
+    var span = document.getElementsByClassName("close")[0];
+
+    // Get the links
+    var privacyPolicyLink = document.getElementById("privacy-policy-link");
+    var legalNoticeLink = document.getElementById("legal-notice-link");
+
+    // When the user clicks on the link, open the modal and set the text
+    privacyPolicyLink.onclick = function () {
+      modal.style.display = "block";
+      document.getElementById("modal-text").innerHTML = `
+    <h2>Politique de Confidentialité</h2>
+    <p>
+      Cette politique de confidentialité décrit comment vos informations personnelles sont collectées, utilisées et partagées lorsque vous visitez notre site web et utilisez notre formulaire de contact.
+    </p>
+    <h3>1. Informations Collectées</h3>
+    <p>
+      Lorsque vous remplissez le formulaire de contact, nous collectons les informations suivantes :
+      <ul>
+        <li>Nom complet</li>
+        <li>Adresse email</li>
+        <li>Message</li>
+      </ul>
+    </p>
+    <h3>2. Utilisation des Informations</h3>
+    <p>
+      Les informations collectées via notre formulaire de contact sont utilisées uniquement pour répondre à vos demandes et pour vous contacter si nécessaire.
+    </p>
+    <h3>3. Partage des Informations</h3>
+    <p>
+      Nous ne partageons pas vos informations personnelles avec des tiers, sauf si cela est nécessaire pour se conformer à la loi ou protéger nos droits.
+    </p>
+    <h3>4. Sécurité des Informations</h3>
+    <p>
+      Nous mettons en œuvre des mesures de sécurité pour protéger vos informations personnelles. Cependant, veuillez noter qu'aucune méthode de transmission sur Internet ou de stockage électronique n'est entièrement sécurisée.
+    </p>
+    <h3>5. Vos Droits</h3>
+    <p>
+      Conformément à la Loi sur la protection des renseignements personnels et les documents électroniques (LPRPDE), vous avez le droit de demander l'accès, la rectification ou la suppression de vos informations personnelles. Pour exercer ces droits, veuillez nous contacter à l'adresse email suivante : contact@votresite.com
+    </p>
+    <h3>6. Modifications de la Politique de Confidentialité</h3>
+    <p>
+      Nous pouvons mettre à jour cette politique de confidentialité de temps à autre. Nous vous informerons de tout changement en publiant la nouvelle politique sur cette page.
+    </p>
+  `;
+    }
+
+    legalNoticeLink.onclick = function () {
+      modal.style.display = "block";
+      document.getElementById("modal-text").innerHTML = `
+    <h2>Mentions Légales</h2>
+    <p>
+      Conformément aux dispositions de la Loi canadienne anti-pourriel (LCAP), nous portons à la connaissance des utilisateurs et visiteurs du site les informations suivantes :
+    </p>
+    <h3>1. Éditeur du Site</h3>
+    <p>
+      <strong>Nom :  </strong> Brice<br>
+      <strong>Adresse :</strong> 405-690 Rue de l'Esplanade, G8Y2P9, Trois Rivières, QC, Canada<br>
+      <strong>Email :</strong> contact@briceclain.com<br>
+      <strong>Numéro de téléphone :</strong> +1 8196098335
+    </p>
+    <h3>2. Hébergement</h3>
+    <p>
+      Le site est hébergé par : <br/>
+      <strong>Nom de l'hébergeur :</strong> WHC (Web Hosting Canada)<br>
+      <strong>Adresse :</strong> 7250 Rue Clark, Suite 301, Montréal, QC H2R 2Y3, Canada<br>
+      <strong>Numéro de téléphone :</strong> +1 514-504-2113
+    </p>
+    <h3>3. Propriété Intellectuelle</h3>
+    <p>
+      Le site et son contenu (textes, images, graphismes, logo, etc.) sont la propriété de l'éditeur et sont protégés par les lois en vigueur sur la propriété intellectuelle. Toute reproduction, distribution, modification, adaptation ou publication des éléments du site, même partielle, est strictement interdite sans l'accord écrit préalable de l'éditeur.
+    </p>
+    <h3>4. Limitation de Responsabilité</h3>
+    <p>
+      L'éditeur ne pourra être tenu responsable des dommages directs et indirects causés au matériel de l'utilisateur lors de l'accès au site. L'éditeur ne pourra également être tenu responsable des dommages indirects (tels qu'une perte de marché ou perte d'une chance) consécutifs à l'utilisation du site.
+    </p>
+    <h3>5. Liens Hypertextes</h3>
+    <p>
+      Le site peut contenir des liens hypertextes vers d'autres sites. L'éditeur n'exerce aucun contrôle sur ces sites et décline toute responsabilité quant à leur contenu.
+    </p>
+    <h3>6. Droit Applicable</h3>
+    <p>
+      Le présent site est soumis au droit canadien. En cas de litige, la juridiction compétente sera celle du ressort des tribunaux canadiens.
+    </p>
+  `;
+    }
+
+
+
+
+    // When the user clicks on <span> (x), close the modal
+    span.onclick = function () {
+      modal.style.display = "none";
+    }
+
+    // When the user clicks anywhere outside of the modal, close it
+    window.onclick = function (event) {
+      if (event.target == modal) {
+        modal.style.display = "none";
+      }
+    }
+
+    //cookies 
+    function showCookiePopup() {
+      document.getElementById('cookie-popup').style.display = 'block';
+    }
+    document.addEventListener("DOMContentLoaded", function () {
+      if (!localStorage.getItem('cookiesAccepted')) {
+        document.getElementById('cookie-popup').style.display = 'block';
+      } else {
+        loadGoogleAnalytics();
+      }
+    });
+
+    function loadGoogleAnalytics() {
+      var script = document.createElement('script');
+      script.src = "https://www.googletagmanager.com/gtag/js?id=G-8HSXP45WGL";
+      script.async = true;
+      document.head.appendChild(script);
+
+      script.onload = function () {
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'G-8HSXP45WGL');
+      };
+    }
+
+    function acceptCookies() {
+      localStorage.setItem('cookiesAccepted', 'true');
+      document.getElementById('cookie-popup').style.display = 'none';
+      loadGoogleAnalytics();
+    }
+
+    function declineCookies() {
+      document.getElementById('cookie-popup').style.display = 'none';
+    }
 
     //Bouton form
     $("#boutontr").click(function () {
@@ -840,7 +1009,7 @@
       }
     }
 
-    document.querySelector('button').addEventListener('click', (e) => {
+    document.querySelector('#form').addEventListener('submit', function(e) {
       e.preventDefault();
       const contactForm = document.querySelector('#form');
       const email = document.querySelector('[name="email"]');
@@ -1237,6 +1406,36 @@
     /*
     smoothScroll.init();
     */
+
+    //slider 
+    let index = 0;
+  let direction = 1; // 1 pour avancer, -1 pour reculer
+  const slides = document.querySelectorAll('.slide');
+  const totalSlides = slides.length;
+
+  function showSlide(i) {
+    slides.forEach((slide, idx) => {
+      slide.classList.remove('active', 'previous');
+      if (idx === i) {
+        slide.classList.add('active');
+      } else if (idx === (i - direction + totalSlides) % totalSlides) {
+        slide.classList.add('previous');
+      }
+    });
+  }
+
+  function nextSlide() {
+    index += direction;
+    if (index >= totalSlides || index < 0) {
+      direction *= -1;
+      index += direction * 2; // revenir en arrière après avoir inversé la direction
+    }
+    showSlide(index);
+  }
+
+  setInterval(nextSlide, 3000); // Change de slide toutes les 3 secondes
+
+  showSlide(index);
   </script>
 </body>
 
