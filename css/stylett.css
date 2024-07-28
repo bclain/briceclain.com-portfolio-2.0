@@ -40,7 +40,7 @@
 
  .button-tt {
      padding: 10px 20px;
-     background: linear-gradient(273.6deg, var(--primary) 1.02%, #1714dc, var(--primary) 98.01%);
+     background: #1714dc;
      border: 1px solid rgba(196, 196, 196, 0.44);
      box-shadow: 0px 4px 44px rgba(0, 0, 0, 0.17);
      backdrop-filter: blur(3px);
@@ -119,11 +119,20 @@
 
 
  .section {
-     border-radius: 15px;
-     width: 98%;
-     margin: 10px;
-     position: relative;
+    border-radius: 15px;
+    width: 98%;
+    margin: 10px;
+    position: relative;
+    background: #f4f4f4b0;
  }
+
+ .section .orange {
+    border-radius: 15px;
+ }
+ .section .orange::after  {
+    border-radius: 15px;
+ }
+ 
 
  .reseaux {
      margin-top: 20px;
