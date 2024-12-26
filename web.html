@@ -67,27 +67,17 @@
                 <button class="button-tt" >Obtenir un devis</button>
             </a>
              
-        </div>
+        </div> 
     
         <div class="section">
             <div class="orange"></div>
             
             <div class="orange2"></div>
-            <h2>Consultation et mentorat 🧠↗️</h2>
-            <p>.Web .Branding .Marketing .DevPerso</p>
-            <a href="https://calendly.com/br-clain/coaching60minutes">
-                <button href="https://square.link/u/MZbZhs5M" class="button-tt">Réserver un appel</button>
-            </a>
-        </div>
-    
-        <div class="section">
-            <div class="orange"></div>
-            
-            <div class="orange2"></div>
-            <h2>Formations bientôt disponibles 🗒✍️</h2>
+            <h2>Inscription pour les ressources gratuites ( newsletter )</h2>
             <form id="form">
-                <input type="text" name="email" placeholder="Votre adresse email*">
-                <input type="text" name="sujet" placeholder="Votre adresse email*" style="display: none;" value="Demande formation"> 
+                <input type="text" name="nom" style="margin-bottom: 10px;" placeholder="Votre nom complet *">
+                <input type="text" name="email" placeholder="Votre adresse email *">
+                <input type="text" name="sujet"  style="display: none;" value="Demande newsletter"> 
                 <p id="err"></p>
                 <p id="succ"></p>
                 <button class="button-tt emailsubmit" type="submit">Être informé</button>
@@ -156,18 +146,22 @@
             const contactForm = document.querySelector('#form');
             const email = document.querySelector('[name="email"]');
             const sujet = document.querySelector('[name="sujet"]');
+            const nom = document.querySelector('[name="nom"]');
             
             // validation before sending the data
-            if(email.value.length===0){
-                $("#err").html(" Veillez entrer une adresse email.")
-                ;}
+            if(nom.value.length === 0){
+                $("#err").html(" Veuillez entrer votre nom.");
+            }
+            else if(email.value.length === 0){
+                $("#err").html(" Veuillez entrer une adresse email.");
+            }
             else if(!email.value.match(/^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/)){
-                $("#err").html(" Veillez entrer une adresse email valide...");
+                $("#err").html(" Veuillez entrer une adresse email valide.");
             }
             else{
                 let data = new FormData(contactForm);  
                 fetch("https://formbold.com/s/oPxbo", { method: "POST", body: data });
-                $("#succ").html(" Adresse email envoyé avec succés !")
+                $("#succ").html(" Informations envoyées avec succés !")
                 $("#err").html("")
                 contactForm.reset()
             }
